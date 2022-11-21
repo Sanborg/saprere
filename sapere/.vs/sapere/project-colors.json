@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3bdce87a-679c-4adb-94f4-0f3dbe4c54c4": {
+      "ProjectGuid": "3bdce87a-679c-4adb-94f4-0f3dbe4c54c4",
+      "DisplayName": "sapere.View",
+      "ColorIndex": 0
+    },
+    "5bfe94ac-107c-4c4d-b8f9-f777e00e67d0": {
+      "ProjectGuid": "5bfe94ac-107c-4c4d-b8f9-f777e00e67d0",
+      "DisplayName": "sapere.Controller",
+      "ColorIndex": 1
+    },
+    "2eaa6653-9c6f-4cc1-8e75-fc5af95e085a": {
+      "ProjectGuid": "2eaa6653-9c6f-4cc1-8e75-fc5af95e085a",
+      "DisplayName": "sapere.Model",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
