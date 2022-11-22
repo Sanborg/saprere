@@ -1,18 +1,18 @@
 ﻿sapere.View
-
+1.0.0.0
 
 winexe
 C#
 .cs
-C:\Users\RES0112515\Source\Repos\Sanborg\saprere\sapere\sapere\obj\Debug\net6.0-windows\
+C:\Users\RES0112515\source\repos\Sanborg\saprere\sapere\sapere\obj\Debug\net6.0-windows\
 sapere.View
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\RES0112515\Source\Repos\Sanborg\saprere\sapere\sapere\App.xaml
+C:\Users\RES0112515\source\repos\Sanborg\saprere\sapere\sapere\App.xaml
 16-2125140728
 
-18-131029396
+20-437243220
 194-164764702
 frmAlteracaoDeSenha.xaml;frmCadastroUsuarioComum.xaml;frmCadastroUsuarioContribuinte.xaml;frmConfiguracoes.xaml;frmEsqueceuSenha.xaml;frmInsercaoCodigo.xaml;frmLogin.xaml;frmMenu.xaml;frmOpcaoDeCadastro.xaml;frmPerfil.xaml;frmPesquisaDeEvento.xaml;frmReportagemDeEvento.xaml;frmRespostaDeEvento.xaml;frmVisualizacaoEventoNaoRespondido.xaml;frmVisualizacaoEventoRespondidoParte1.xaml;frmVisualizacaoEventoRespondidoParte2.xaml;
 

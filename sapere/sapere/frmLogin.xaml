@@ -12,8 +12,17 @@
         <Grid.Background>
             <ImageBrush/>
         </Grid.Background>
+        <Image HorizontalAlignment="Center" Height="920" Margin="0,0,0,0" VerticalAlignment="Center" Width="600" Source="/frmLogin.png">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/frmLogin.png"/>
+            </Image.OpacityMask>
+        </Image>
+
         <TextBox HorizontalAlignment="Left" Margin="138,352,0,0" TextWrapping="Wrap" Text="Usuário" VerticalAlignment="Top" Width="265" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24" TextDecorations="{x:Null}" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Margin="138,447,0,0" TextWrapping="Wrap" Text="Senha" VerticalAlignment="Top" Width="265" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24" TextDecorations="{x:Null}" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Margin="138,451,0,0" TextWrapping="Wrap" Text="Senha" VerticalAlignment="Top" Width="265" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24" TextDecorations="{x:Null}" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="153,534,0,0" TextWrapping="Wrap" Text="LOGIN" VerticalAlignment="Top" Height="31" Width="206" FontFamily="Lucida Sans" FontSize="24" FontWeight="Bold" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="153,602,0,0" TextWrapping="Wrap" Text="Esqueceu a senha?" VerticalAlignment="Top" Height="31" Width="206" FontFamily="Lucida Sans" FontSize="16" FontWeight="Bold" TextAlignment="Center"/>
+        <TextBlock HorizontalAlignment="Left" Margin="153,735,0,0" TextWrapping="Wrap" Text="CRIAR CONTA" VerticalAlignment="Top" Height="31" Width="206" FontFamily="Lucida Sans" FontSize="22" FontWeight="Bold" TextAlignment="Center"/>
 
     </Grid>
 </Window>
