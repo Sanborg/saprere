@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5SSitMXQ1MrMld0fTMMvYQ7gnxYMS441hxerSAB+FpOe65BTCf2SzPCA17u1HvaVbEcOVDc/SjxLcznsHGtPKg==",
+  "dgSpecHash": "+l7Hc1oRjbC6F/3gtHjL2sgpj1PsfghawyWtHPxnhMPi0ZYtcu5nS6KZKS1vdU75WD0+B4xED+6KrNTWoywQ5A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\RES0112515\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Controller\\sapere.Controller.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\rafas\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Controller\\sapere.Controller.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\rafas\\.nuget\\packages\\mysqlconnector\\2.2.1\\mysqlconnector.2.2.1.nupkg.sha512"
+  ],
   "logs": []
 }
