@@ -15,7 +15,7 @@ public class Evento
     public string escopoDoEvento { get; set; }
     public string imagem { get; set; }
     public string video { get; set; }
-    public int audio { get; set; }
+    public string audio { get; set; }
     public string localDeVisualizacao { get; set; }
     public DateTime dataHoraVisualizacao { get; set; }
     public string link1 { get; set; }

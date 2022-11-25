@@ -51,7 +51,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBlock x:Name="btnCadastro" HorizontalAlignment="Left" Margin="165,654,0,0" TextWrapping="Wrap" Text="CADASTRAR" VerticalAlignment="Top" Height="31" Width="206" FontFamily="Lucida Sans" FontSize="24" FontWeight="Bold" TextAlignment="Center"/>
+        <TextBlock x:Name="btnCadastro" HorizontalAlignment="Left" Margin="166,644,0,0" TextWrapping="Wrap" Text="CADASTRAR" VerticalAlignment="Top" Height="51" Width="206" FontFamily="Lucida Sans" FontSize="24" FontWeight="Bold" TextAlignment="Center" Padding="0,10,0,0"/>
         <TextBlock x:Name="btnVisualizarConfirmaSenhaCadastro" HorizontalAlignment="Left" Margin="372,553,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="40"/>
         <TextBlock x:Name="btnVisualizarSenhaCadastro" HorizontalAlignment="Left" Margin="374,461,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="40"/>
         <TextBlock x:Name="btnVoltarCadastro" HorizontalAlignment="Left" Margin="27,783,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="79" Width="90"/>
