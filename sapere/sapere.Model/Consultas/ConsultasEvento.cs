@@ -98,23 +98,26 @@ public class ConsultasEvento
         }
         return evento;
     }
-    public static bool ResponderEvento(int id, string nome, string senha)
+    public static bool ResponderEvento(int id, int idUsuarioRespondente, string resposta, string link1 = "", string link2 = "", string link3 = "")
     {
         var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
-        bool foiEditado = false;
+        bool foiRespondido = false;
 
         try
         {
             conexao.Open();
             var comando = conexao.CreateCommand();
             comando.CommandText = @"
-                  UPDATE Usuario SET nome = @nome, senha = @senha
+                  UPDATE Evento SET idUsuarioRespondente = @idUsuarioRespondente, resposta = @resposta, link1 = @link1, link2 = @link2, link3 = @link3
                   WHERE id = @id";
             comando.Parameters.AddWithValue("@id", id);
-            comando.Parameters.AddWithValue("@nome", nome);
-            comando.Parameters.AddWithValue("@senha", senha);
+            comando.Parameters.AddWithValue("@idUsuarioRespondente", idUsuarioRespondente);
+            comando.Parameters.AddWithValue("@resposta", resposta);
+            comando.Parameters.AddWithValue("@link1", link1);
+            comando.Parameters.AddWithValue("@link2", link2);
+            comando.Parameters.AddWithValue("@link3", link3);
             var leitura = comando.ExecuteReader();
-            foiEditado = true;
+            foiRespondido = true;
 
 
 
@@ -132,7 +135,7 @@ public class ConsultasEvento
             }
         }
 
-        return foiEditado;
+        return foiRespondido;
     }
     public static bool ExcluirUsuario(int id)
     {
@@ -144,7 +147,7 @@ public class ConsultasEvento
             conexao.Open();
             var comando = conexao.CreateCommand();
             comando.CommandText = @"
-                DELETE FROM Usuario WHERE id = @id;";
+                DELETE FROM Evento WHERE id = @id;";
             comando.Parameters.AddWithValue("@id", id);
             var leitura = comando.ExecuteReader();
             foiExcluido = true;
@@ -161,6 +164,102 @@ public class ConsultasEvento
             }
         }
         return foiExcluido;
+    }
+    public static Evento VisualizarEventosReportados(int idUsuarioCriador)
+    {
+        var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
+        Evento evento = null;
+
+        try
+        {
+            conexao.Open();
+            var comando = conexao.CreateCommand();
+            comando.CommandText = @"
+                SELECT * FROM Usuario WHERE idUsuarioCriador = @idUsuarioCriador;";
+            comando.Parameters.AddWithValue("@idUsuarioCriador", idUsuarioCriador);
+            var leitura = comando.ExecuteReader();
+            while (leitura.Read())
+            {
+                evento = new Evento();
+                evento.id = leitura.GetInt32("id");
+                evento.idUsuarioCriador = leitura.GetInt32("idUsuarioCriador");
+                evento.idUsuarioRespondente = leitura.GetInt32("idUsuarioRespondente");
+                evento.titulo = leitura.GetString("titulo");
+                evento.descricao = leitura.GetString("descricao");
+                evento.escopoDoEvento = leitura.GetString("escopoDoEvento");
+                evento.imagem = leitura.GetString("imagem");
+                evento.video = leitura.GetString("video");
+                evento.audio = leitura.GetString("audio");
+                evento.descricao = leitura.GetString("descricao");
+                evento.localDeVisualizacao = leitura.GetString("localDeVisualizacao");
+                evento.dataHoraVisualizacao = leitura.GetDateTime("dataHoraVisualizacao");
+                evento.link1 = leitura.GetString("link1");
+                evento.link2 = leitura.GetString("link2");
+                evento.link3 = leitura.GetString("link3");
+                evento.resposta = leitura.GetString("resposta");
+            }
+
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+        finally
+        {
+            if (conexao.State == System.Data.ConnectionState.Open)
+            {
+                conexao.Close();
+            }
+        }
+        return evento;
+    }
+    public static Evento VisualizarEventosRespondidos(int idUsuarioRespondente)
+    {
+        var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
+        Evento evento = null;
+
+        try
+        {
+            conexao.Open();
+            var comando = conexao.CreateCommand();
+            comando.CommandText = @"
+                SELECT * FROM Usuario WHERE idUsuarioRespondente = @idUsuarioRespondente;";
+            comando.Parameters.AddWithValue("@idUsuarioRespondente", idUsuarioRespondente);
+            var leitura = comando.ExecuteReader();
+            while (leitura.Read())
+            {
+                evento = new Evento();
+                evento.id = leitura.GetInt32("id");
+                evento.idUsuarioCriador = leitura.GetInt32("idUsuarioCriador");
+                evento.idUsuarioRespondente = leitura.GetInt32("idUsuarioRespondente");
+                evento.titulo = leitura.GetString("titulo");
+                evento.descricao = leitura.GetString("descricao");
+                evento.escopoDoEvento = leitura.GetString("escopoDoEvento");
+                evento.imagem = leitura.GetString("imagem");
+                evento.video = leitura.GetString("video");
+                evento.audio = leitura.GetString("audio");
+                evento.descricao = leitura.GetString("descricao");
+                evento.localDeVisualizacao = leitura.GetString("localDeVisualizacao");
+                evento.dataHoraVisualizacao = leitura.GetDateTime("dataHoraVisualizacao");
+                evento.link1 = leitura.GetString("link1");
+                evento.link2 = leitura.GetString("link2");
+                evento.link3 = leitura.GetString("link3");
+                evento.resposta = leitura.GetString("resposta");
+            }
+
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+        finally
+        {
+            if (conexao.State == System.Data.ConnectionState.Open)
+            {
+                conexao.Close();
+            }
+        }
+        return evento;
     }
 }
 
