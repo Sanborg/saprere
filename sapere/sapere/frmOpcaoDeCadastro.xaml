@@ -9,6 +9,9 @@
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Image x:Name="imgFundoOpcaoDeCadastro" HorizontalAlignment="Center" Height="1035" VerticalAlignment="Top" Width="627" Source="/frmOpcaoDeCadastro.png"/>
+        <TextBlock x:Name="btnTornarContribuidor" HorizontalAlignment="Left" Height="116" Margin="84,556,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" MouseLeftButtonDown="PressionarBotaoTornarContribuinte"/>
+        <TextBlock x:Name="btnNaoTornarContribuidor" HorizontalAlignment="Left" Height="116" Margin="383,556,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" MouseLeftButtonDown="PressionarBotaoNaoTornarContribuinte"/>
+
     </Grid>
 </Window>

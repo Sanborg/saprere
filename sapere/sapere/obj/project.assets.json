@@ -1,26 +1,114 @@
 {
   "version": 3,
   "targets": {
-    "net6.0-windows7.0": {}
+    "net6.0-windows7.0": {
+      "MySqlConnector/2.2.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MySqlConnector.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MySqlConnector.dll": {}
+        }
+      },
+      "sapere.Controller/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "sapere.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/sapere.Controller.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/sapere.Controller.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "sapere.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MySqlConnector": "2.2.1"
+        },
+        "compile": {
+          "bin/placeholder/sapere.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/sapere.Model.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "MySqlConnector/2.2.1": {
+      "sha512": "k5wwd56u2WoIVLxeKsUHl8WS27shGluK6yLwziAnJwERnMQ5TsAFHRpr6EKEfpLwGF+FwrbmJXUdCk9+EU7Wrw==",
+      "type": "package",
+      "path": "mysqlconnector/2.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net461/MySqlConnector.dll",
+        "lib/net461/MySqlConnector.xml",
+        "lib/net471/MySqlConnector.dll",
+        "lib/net471/MySqlConnector.xml",
+        "lib/net6.0/MySqlConnector.dll",
+        "lib/net6.0/MySqlConnector.xml",
+        "lib/net7.0/MySqlConnector.dll",
+        "lib/net7.0/MySqlConnector.xml",
+        "lib/netcoreapp3.1/MySqlConnector.dll",
+        "lib/netcoreapp3.1/MySqlConnector.xml",
+        "lib/netstandard2.0/MySqlConnector.dll",
+        "lib/netstandard2.0/MySqlConnector.xml",
+        "lib/netstandard2.1/MySqlConnector.dll",
+        "lib/netstandard2.1/MySqlConnector.xml",
+        "logo.png",
+        "mysqlconnector.2.2.1.nupkg.sha512",
+        "mysqlconnector.nuspec"
+      ]
+    },
+    "sapere.Controller/1.0.0": {
+      "type": "project",
+      "path": "../sapere.Controller/sapere.Controller.csproj",
+      "msbuildProject": "../sapere.Controller/sapere.Controller.csproj"
+    },
+    "sapere.Model/1.0.0": {
+      "type": "project",
+      "path": "../sapere.Model/sapere.Model.csproj",
+      "msbuildProject": "../sapere.Model/sapere.Model.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0-windows7.0": []
+    "net6.0-windows7.0": [
+      "sapere.Controller >= 1.0.0",
+      "sapere.Model >= 1.0.0"
+    ]
   },
   "packageFolders": {
-    "C:\\Users\\rafas\\.nuget\\packages\\": {}
+    "C:\\Users\\RES0112515\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rafas\\source\\repos\\Sanborg\\saprere\\sapere\\sapere\\sapere.View.csproj",
+      "projectUniqueName": "C:\\Users\\RES0112515\\source\\repos\\Sanborg\\saprere\\sapere\\sapere\\sapere.View.csproj",
       "projectName": "sapere.View",
-      "projectPath": "C:\\Users\\rafas\\source\\repos\\Sanborg\\saprere\\sapere\\sapere\\sapere.View.csproj",
-      "packagesPath": "C:\\Users\\rafas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rafas\\source\\repos\\Sanborg\\saprere\\sapere\\sapere\\obj\\",
+      "projectPath": "C:\\Users\\RES0112515\\source\\repos\\Sanborg\\saprere\\sapere\\sapere\\sapere.View.csproj",
+      "packagesPath": "C:\\Users\\RES0112515\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\RES0112515\\source\\repos\\Sanborg\\saprere\\sapere\\sapere\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\rafas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\RES0112515\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -33,7 +121,14 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\RES0112515\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Controller\\sapere.Controller.csproj": {
+              "projectPath": "C:\\Users\\RES0112515\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Controller\\sapere.Controller.csproj"
+            },
+            "C:\\Users\\RES0112515\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Model\\sapere.Model.csproj": {
+              "projectPath": "C:\\Users\\RES0112515\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Model\\sapere.Model.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -63,7 +158,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

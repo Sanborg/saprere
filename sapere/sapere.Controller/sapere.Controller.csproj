@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\sapere.Model\sapere.Model.csproj" />
-    <ProjectReference Include="..\sapere\sapere.View.csproj" />
   </ItemGroup>
 
 </Project>

@@ -19,9 +19,29 @@ namespace sapere.View
     /// </summary>
     public partial class frmOpcaoDeCadastro : Window
     {
+        public Usuario usuario { get; }
+
         public frmOpcaoDeCadastro()
         {
             InitializeComponent();
+        }
+        public frmOpcaoDeCadastro(Usuario usuario)
+        {
+            InitializeComponent();
+            this.usuario = usuario;
+        }
+        private void PressionarBotaoTornarContribuinte(object sender, MouseButtonEventArgs e)
+        {
+            frmCadastroUsuarioContribuinte frmCadastroUsuarioContribuinte = new frmCadastroUsuarioContribuinte(usuario);
+            frmCadastroUsuarioContribuinte.Show();
+            Close();
+        }
+
+        private void PressionarBotaoNaoTornarContribuinte(object sender, MouseButtonEventArgs e)
+        {
+            frmMenu frmMenu = new frmMenu(usuario);
+            frmMenu.Show();
+            Close();
         }
     }
 }

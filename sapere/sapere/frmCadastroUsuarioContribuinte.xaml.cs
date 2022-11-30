@@ -19,9 +19,33 @@ namespace sapere.View
     /// </summary>
     public partial class frmCadastroUsuarioContribuinte : Window
     {
+        public Usuario usuario { get; }
         public frmCadastroUsuarioContribuinte()
         {
             InitializeComponent();
+        }
+        public frmCadastroUsuarioContribuinte(Usuario usuario)
+        {
+            InitializeComponent();
+            this.usuario = usuario;
+        }
+        private bool VerificaCampos()
+        {
+            if (boxIdade.Text != "" && boxCpf.Text != "" && boxTelefone.Text != "" && boxCursoDeGraduacao.Text != "" && boxInstituicaoEnsinoSuperior.Text != "")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+        private bool TornarContribuinte()
+        {
+            cUsuario.TornarContribuinte(usuario.id, boxCpf, boxIdade, boxTelefone, boxCursoDeGraduacao, boxInstituicaoEnsinoSuperior, boxTipoUsuario);
+            frmMenu frmMenu = new frmMenu(usuario);
+            frmMenu.Show();
+            Close();
         }
     }
 }

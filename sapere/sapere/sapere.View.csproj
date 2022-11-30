@@ -9,10 +9,17 @@
 
   <ItemGroup>
     <None Remove="frmLogin.png" />
+    <None Remove="frmOpcaoDeCadastro.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\sapere.Controller\sapere.Controller.csproj" />
+    <ProjectReference Include="..\sapere.Model\sapere.Model.csproj" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="frmLogin.png" />
+    <Resource Include="frmOpcaoDeCadastro.png" />
   </ItemGroup>
 
 </Project>

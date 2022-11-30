@@ -23,5 +23,31 @@ namespace sapere.View
         {
             InitializeComponent();
         }
+        private bool VerificaCampos()
+        {
+            if (boxNomeCadastro.Text != "" && boxEmailCadastro.Text != "" && boxSenhaCadastro.Password != "" && boxConfirmaSenhaCadastro.Password != "")
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        private void CadastrarUsuario(object sender, MouseButtonEventArgs e)
+        {
+            if(VerificaCampos() == true)
+            {
+                bool foiInserido = cUsuario.CadastrarUsuario(boxNomeCadastro.Text, boxSenhaCadastro.Password, "comum");
+                if (foiInserido == true)
+                {
+                    frmOpcaoDeCadastro frmOpcaoDeCadastro = new frmOpcaoDeCadastro();
+                    frmOpcaoDeCadastro.Show();
+                    Close();
+                }
+            }
+        }
     }
+
 }
