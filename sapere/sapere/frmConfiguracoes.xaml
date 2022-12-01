@@ -5,10 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:sapere.View"
         mc:Ignorable="d"
-        Title="frmConfiguracoes" Height="920" Width="600"
+        Title="frmConfiguracoes" Height="920" Width="523"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Image x:Name="imgFundoConfiguracoes" Margin="-21,-21,-34,-72" Source="/Image11.png" Stretch="Fill"/>
+        <TextBlock HorizontalAlignment="Left" Height="80" Margin="112,230,0,0" TextWrapping="Wrap" Text="Trocar Usuário" VerticalAlignment="Top" Width="366" FontSize="24" FontFamily="Lucida Sans" FontWeight="Bold"/>
     </Grid>
 </Window>

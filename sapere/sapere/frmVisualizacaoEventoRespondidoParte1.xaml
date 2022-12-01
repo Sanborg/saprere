@@ -5,10 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:sapere.View"
         mc:Ignorable="d"
-        Title="frmVisualizacaoEventoRespondidoParte1" Height="920" Width="600"
+        Title="frmVisualizacaoEventoRespondidoParte1" Height="920" Width="523"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Image Margin="-19,-19,-34,-41" Source="/Image23.png" Stretch="Fill"/>
+
     </Grid>
 </Window>

@@ -33,8 +33,8 @@ namespace sapere.View
         {
             if (VerificaCampos() == true)
             {
-                string email = boxEmailUsuarioLogin.Text;
-                string senha = boxSenhaLogin.Password;
+                string email = boxEmail.Text;
+                string senha = boxSenha.Password;
                 Login(email, senha);
 
             }
@@ -52,7 +52,7 @@ namespace sapere.View
 
         private bool VerificaCampos()
         {
-            if (boxEmailUsuarioLogin.Text != "" && boxSenhaLogin.Password != "")
+            if (boxEmail.Text != "" && boxSenha.Password != "")
             {
                 return true;
             }

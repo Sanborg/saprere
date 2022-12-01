@@ -25,7 +25,7 @@ namespace sapere.View
         }
         private bool VerificaCampos()
         {
-            if (boxNomeCadastro.Text != "" && boxEmailCadastro.Text != "" && boxSenhaCadastro.Password != "" && boxConfirmaSenhaCadastro.Password != "")
+            if (boxNome.Text != "" && boxEmail.Text != "" && boxSenha.Password != "" && boxConfirmaSenha.Password != "")
             {
                 return true;
             }
@@ -39,7 +39,7 @@ namespace sapere.View
         {
             if(VerificaCampos() == true)
             {
-                bool foiInserido = cUsuario.CadastrarUsuario(boxNomeCadastro.Text, boxSenhaCadastro.Password, "comum");
+                bool foiInserido = cUsuario.CadastrarUsuario(boxNome.Text, boxSenha.Password, "comum");
                 if (foiInserido == true)
                 {
                     frmOpcaoDeCadastro frmOpcaoDeCadastro = new frmOpcaoDeCadastro();

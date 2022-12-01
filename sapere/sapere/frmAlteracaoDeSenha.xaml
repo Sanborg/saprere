@@ -5,10 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:sapere.View"
         mc:Ignorable="d"
-        Title="frmAlteracaoDeSenha" Height="920" Width="600"
+        Title="frmAlteracaoDeSenha" Height="920" Width="523"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Image x:Name="imgFundoAlteracaoDeSenha" Margin="-22,-21,-23,-18" Source="/Image12.png" Stretch="Fill"/>
+        <PasswordBox x:Name="boxSenha" HorizontalAlignment="Left" Margin="152,380,0,0" VerticalAlignment="Top" Width="258" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24"/>
+        <PasswordBox x:Name="boxConfirmaSenha" HorizontalAlignment="Left" Margin="152,469,0,0" VerticalAlignment="Top" Width="258" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24"/>
+        <TextBlock x:Name="btnAlterarSenha" HorizontalAlignment="Left" Margin="160,591,0,0" TextWrapping="Wrap" Text="ALTERAR SENHA" VerticalAlignment="Top" Height="55" Width="206" FontFamily="Lucida Sans" FontSize="24" FontWeight="Bold" TextAlignment="Center" Padding="0,15,0,0" MouseLeftButtonDown="RealizarLogin"/>
+        <PasswordBox x:Name="boxSenha1" HorizontalAlignment="Left" Margin="154,380,0,0" VerticalAlignment="Top" Width="256" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24"/>
+        <PasswordBox x:Name="boxConfirmarSenha" HorizontalAlignment="Left" Margin="152,469,0,0" VerticalAlignment="Top" Width="256" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24"/>
+
     </Grid>
 </Window>

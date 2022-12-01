@@ -5,11 +5,11 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:sapere.View"
         mc:Ignorable="d"
-        Title="frmOpcaoDeCadastro" Height="920" Width="600"
+        Title="frmOpcaoDeCadastro" Height="920" Width="523"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <Image x:Name="imgFundoOpcaoDeCadastro" HorizontalAlignment="Center" Height="1035" VerticalAlignment="Top" Width="627" Source="/frmOpcaoDeCadastro.png"/>
+        <Image x:Name="imgFundoOpcaoDeCadastro" HorizontalAlignment="Center" Height="1035" VerticalAlignment="Top" Width="552" Source="/frmOpcaoDeCadastro.png"/>
         <TextBlock x:Name="btnTornarContribuidor" HorizontalAlignment="Left" Height="116" Margin="84,556,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" MouseLeftButtonDown="PressionarBotaoTornarContribuinte"/>
         <TextBlock x:Name="btnNaoTornarContribuidor" HorizontalAlignment="Left" Height="116" Margin="383,556,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" MouseLeftButtonDown="PressionarBotaoNaoTornarContribuinte"/>
 

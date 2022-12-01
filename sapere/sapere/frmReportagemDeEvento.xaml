@@ -5,10 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:sapere.View"
         mc:Ignorable="d"
-        Title="frmReportagemDeEvento" Height="920" Width="600"
+        Title="frmReportagemDeEvento" Height="920" Width="523
+        "
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Image Margin="-19,-19,-34,-73" Source="/Image19.png" Stretch="Fill"/>
+
     </Grid>
 </Window>

@@ -5,10 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:sapere.View"
         mc:Ignorable="d"
-        Title="frmVisualizacaoEventoNaoRespondido" Height="920" Width="600"
+        Title="frmVisualizacaoEventoNaoRespondido" Height="920" Width="523
+        "
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <Image Margin="-22,-19,-32,-41" Source="/Image22.png" Stretch="Fill"/>
+
     </Grid>
 </Window>
