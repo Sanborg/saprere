@@ -9,8 +9,9 @@
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <Image x:Name="imgCadastroUsuarioContribuinte" Margin="-20,-20,-24,-19" Source="/imgFundoCadastroUsuarioContribuinte.png" Stretch="Fill"/>
-        <TextBox x:Name="boxNome" HorizontalAlignment="Left" Margin="152,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="98" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" TextDecorations="{x:Null}" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" FontSize="14" Padding="0,5,0,0" Text="Idade">
+        <Image Margin="-21,-20,-23,-19" Source="/imgFundoCadastroUsuarioContribuinte.png" Stretch="Fill"/>
+        <Image x:Name="imgCadastroUsuarioContribuinte" Margin="-20,-20,-24,-19" Source="/Resources/imgFundoCadastroUsuarioContribuinte.png" Stretch="Fill"/>
+        <TextBox x:Name="boxIdade" HorizontalAlignment="Left" Margin="152,290,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="98" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" TextDecorations="{x:Null}" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" FontSize="14" Padding="0,5,0,0" Text="Idade">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -20,7 +21,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="boxNome_Copy" HorizontalAlignment="Left" Margin="306,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" TextDecorations="{x:Null}" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" FontSize="14" Padding="0,5,0,0" Text="CPF">
+        <TextBox x:Name="boxCpf" HorizontalAlignment="Left" Margin="306,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" TextDecorations="{x:Null}" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" FontSize="14" Padding="0,5,0,0" Text="CPF">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -32,11 +33,11 @@
         </TextBox>
         <TextBox x:Name="boxTelefone" HorizontalAlignment="Left" Margin="160,346,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24" TextDecorations="{x:Null}" FontWeight="Bold" Text="Telefone"/>
         <TextBox x:Name="boxCursoDeGraduacao" HorizontalAlignment="Left" Margin="160,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="260" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="22" TextDecorations="{x:Null}" FontWeight="Bold" Text="Curso de graduação"/>
-        <TextBox x:Name="boxInstituicaoDeEnsino" HorizontalAlignment="Left" Margin="160,456,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="22" TextDecorations="{x:Null}" FontWeight="Bold" Text="Instituição de Ensino"/>
+        <TextBox x:Name="boxInstituicaoEnsinoSuperior" HorizontalAlignment="Left" Margin="160,456,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="275" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="22" TextDecorations="{x:Null}" FontWeight="Bold" Text="Instituição de Ensino"/>
         <TextBlock x:Name="btnAnexarFotoDiploma" HorizontalAlignment="Left" Height="80" Margin="108,530,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="92"/>
         <TextBlock x:Name="btnTornarContribuidor" HorizontalAlignment="Left" Height="51" Margin="162,641,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" Text="TORNAR-SE CONTRIBUIDOR" FontFamily="Lucida Sans" FontWeight="Bold" FontSize="14" Padding="4,17,0,0"/>
         <TextBlock x:Name="btnTornarContribuidor_Copy" HorizontalAlignment="Left" Height="73" Margin="27,782,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="83" FontFamily="Lucida Sans" FontWeight="Bold" FontSize="14" Padding="4,17,0,0"/>
-        <TextBlock x:Name="txtCadastro" HorizontalAlignment="Center" Margin="0,213,0,0" TextWrapping="Wrap" Text="Preencha os campos para tornar-se um contribuinte" VerticalAlignment="Top" Height="42" Width="357" FontFamily="Lucida Sans" FontSize="18" FontWeight="Bold" TextAlignment="Center" MouseLeftButtonDown="PressionarEsqueceuSenha"/>
-        <TextBlock x:Name="txtCadastro_Copy" HorizontalAlignment="Left" Margin="193,554,0,0" TextWrapping="Wrap" Text="Anexar foto do diploma (não obrigatório)" VerticalAlignment="Top" Height="42" Width="181" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" MouseLeftButtonDown="PressionarEsqueceuSenha"/>
+        <TextBlock x:Name="txtCadastro" HorizontalAlignment="Center" Margin="0,213,0,0" TextWrapping="Wrap" Text="Preencha os campos para tornar-se um contribuinte" VerticalAlignment="Top" Height="42" Width="357" FontFamily="Lucida Sans" FontSize="18" FontWeight="Bold" TextAlignment="Center"/>
+        <TextBlock x:Name="txtCadastro_Copy" HorizontalAlignment="Left" Margin="193,554,0,0" TextWrapping="Wrap" Text="Anexar foto do diploma (não obrigatório)" VerticalAlignment="Top" Height="42" Width="181" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center"/>
     </Grid>
 </Window>

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 public class cUsuario
 {
-    public static bool CadastrarUsuario(string nome, string senha, string tipoUsuario)
+    public static bool CadastrarUsuario(string nome, string senha)
     {
-        return ConsultasUsuario.CadastrarUsuario(nome, senha, tipoUsuario);
+        return ConsultasUsuario.CadastrarUsuario(nome, senha);
     }
     public static Usuario BuscarDadosUsuario(string email, string senha)
     {
@@ -26,9 +26,9 @@ public class cUsuario
     {
         return ConsultasUsuario.ExcluirUsuario(id);
     }
-    public static bool TornarContribuinte(int id, string cpf, int idade, string telefone, string cursoDeGraduacao, string instituicaoEnsinoSuperior, string tipoUsuario, string fotoDiploma = "")
+    public static bool TornarContribuinte(int id, string cpf, int idade, string telefone, string cursoDeGraduacao, string instituicaoEnsinoSuperior, string fotoDiploma = "")
     {
-        return ConsultasUsuario.TornarContribuinte(id, cpf, idade, telefone, cursoDeGraduacao, instituicaoEnsinoSuperior, tipoUsuario, fotoDiploma);
+        return ConsultasUsuario.TornarContribuinte(id, cpf, idade, telefone, cursoDeGraduacao, instituicaoEnsinoSuperior, fotoDiploma);
     }
     public static bool InserirDescricao(int id, string descricao)
     {

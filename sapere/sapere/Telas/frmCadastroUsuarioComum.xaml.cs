@@ -39,7 +39,7 @@ namespace sapere.View
         {
             if(VerificaCampos() == true)
             {
-                bool foiInserido = cUsuario.CadastrarUsuario(boxNome.Text, boxSenha.Password, "comum");
+                bool foiInserido = cUsuario.CadastrarUsuario(boxNome.Text, boxSenha.Password);
                 if (foiInserido == true)
                 {
                     frmOpcaoDeCadastro frmOpcaoDeCadastro = new frmOpcaoDeCadastro();

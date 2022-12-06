@@ -9,15 +9,15 @@
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <Image x:Name="imgFundoMenu" Margin="-28,-22,-42,-41" Source="/imgFundoMenu.png" Stretch="Fill"/>
+        <Image x:Name="imgFundoMenu" Margin="-28,-22,-42,-41" Source="/Resources/imgFundoMenu.png" Stretch="Fill"/>
         <TextBlock HorizontalAlignment="Left" Margin="32,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="62" Width="299"/>
-        <TextBlock x:Name="txtCumprimento" HorizontalAlignment="Left" Margin="16,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="80" Width="362" FontFamily="Lucida Sans" FontSize="40" FontWeight="Bold" TextAlignment="Center" Padding="0,15,110,0" MouseLeftButtonDown="RealizarLogin"/>
-        <TextBlock x:Name="txtNenhumEventoEncontrado" HorizontalAlignment="Center" Margin="0,414,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="80" Width="460" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" MouseLeftButtonDown="RealizarLogin" Text="Nenhum evento reportado encontrado." Foreground="#FF6D6D6D"/>
-        <TextBlock x:Name="btnReportarEvento" HorizontalAlignment="Left" Margin="210,808,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="96" Width="106" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" MouseLeftButtonDown="RealizarLogin" Foreground="#FF6D6D6D"/>
-        <TextBlock x:Name="btnPerfil" HorizontalAlignment="Left" Margin="321,826,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="78" Width="95" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" MouseLeftButtonDown="RealizarLogin" Foreground="#FF6D6D6D"/>
-        <TextBlock x:Name="btnConfiguracoes" HorizontalAlignment="Left" Margin="416,826,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="78" Width="92" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" MouseLeftButtonDown="RealizarLogin" Foreground="#FF6D6D6D"/>
-        <TextBlock x:Name="btnPesquisarEvento" HorizontalAlignment="Left" Margin="120,826,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="78" Width="90" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" MouseLeftButtonDown="RealizarLogin" Foreground="#FF6D6D6D"/>
-        <TextBlock x:Name="btnMenu" HorizontalAlignment="Left" Margin="20,826,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="78" Width="90" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" MouseLeftButtonDown="RealizarLogin" Foreground="#FF6D6D6D"/>
+        <TextBlock x:Name="txtCumprimento" HorizontalAlignment="Left" Margin="16,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="80" Width="362" FontFamily="Lucida Sans" FontSize="40" FontWeight="Bold" TextAlignment="Center" Padding="0,15,110,0"/>
+        <TextBlock x:Name="txtNenhumEventoEncontrado" HorizontalAlignment="Center" Margin="0,414,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="80" Width="460" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" Text="Nenhum evento reportado encontrado." Foreground="#FF6D6D6D"/>
+        <TextBlock x:Name="btnReportarEvento" HorizontalAlignment="Left" Margin="210,808,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="96" Width="106" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" Foreground="#FF6D6D6D"/>
+        <TextBlock x:Name="btnPerfil" HorizontalAlignment="Left" Margin="321,826,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="78" Width="95" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" Foreground="#FF6D6D6D"/>
+        <TextBlock x:Name="btnConfiguracoes" HorizontalAlignment="Left" Margin="416,826,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="78" Width="92" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" Foreground="#FF6D6D6D"/>
+        <TextBlock x:Name="btnPesquisarEvento" HorizontalAlignment="Left" Margin="120,826,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="78" Width="90" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" Foreground="#FF6D6D6D"/>
+        <TextBlock x:Name="btnMenu" HorizontalAlignment="Left" Margin="20,826,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="78" Width="90" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" Foreground="#FF6D6D6D"/>
 
     </Grid>
 </Window>

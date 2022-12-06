@@ -42,12 +42,7 @@ namespace sapere.View
 
         private void EsqueceuSenhaUsuario(object sender, MouseButtonEventArgs e)
         {
-            MessageBoxResult result = MessageBox.Show(
-               "Contate o seu gerente",
-               "Informação",
-               MessageBoxButton.OK,
-               MessageBoxImage.Warning
-               );
+
         }
 
         private bool VerificaCampos()

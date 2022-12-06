@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\rafas\source\repos\Sanborg\saprere\sapere\sapere\obj\Debug\net6.0-windows\
+C:\Users\RES0112515\source\repos\Sanborg\saprere\sapere\sapere\obj\Debug\net6.0-windows\
 sapere.View
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\rafas\source\repos\Sanborg\saprere\sapere\sapere\App.xaml
+C:\Users\RES0112515\source\repos\Sanborg\saprere\sapere\sapere\App.xaml
 16-229511763
 
-20-1625133899
-197-623393635
+21-12825371
+197-1803596645
 Telas\frmAlteracaoDeSenha.xaml;Telas\frmCadastroUsuarioComum.xaml;Telas\frmCadastroUsuarioContribuinte.xaml;Telas\frmConfiguracoes.xaml;Telas\frmEsqueceuSenha.xaml;Telas\frmInsercaoCodigo.xaml;Telas\frmLogin.xaml;Telas\frmMenu.xaml;Telas\frmOpcaoDeCadastro.xaml;Telas\frmPerfil.xaml;Telas\frmPesquisaDeEvento.xaml;Telas\frmReportagemDeEvento.xaml;Telas\frmRespostaDeEvento.xaml;Telas\frmVisualizacaoEventoNaoRespondido.xaml;Telas\frmVisualizacaoEventoRespondidoParte1.xaml;Telas\frmVisualizacaoEventoRespondidoParte2.xaml;
 
-False
+True
 

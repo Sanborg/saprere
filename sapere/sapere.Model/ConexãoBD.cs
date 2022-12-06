@@ -16,7 +16,7 @@ public class ConexaoBD
                 Server = "127.0.0.1",
                 UserID = "root",
                 Password = "",
-                Database = "bd_mercearia_seu_joao"
+                Database = "bd_sapere"
             };
         }
         private set { }

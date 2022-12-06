@@ -9,11 +9,22 @@
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <Image x:Name="imgFundoConfiguracoes" Margin="-21,-21,-34,-72" Source="/Image11.png" Stretch="Fill"/>
+        <Image Margin="-27,-22,-40,-74" Source="/Image2.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0.03"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.249"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="imgFundoConfiguracoes" Margin="-21,-21,-34,-72" Source="/Resources/imgFundoConfiguracoes.png" Stretch="Fill"/>
         <TextBlock x:Name="btnTrocarUsuario" HorizontalAlignment="Left" Height="80" Margin="53,233,0,0" TextWrapping="Wrap" Text="Trocar Usuário" VerticalAlignment="Top" Width="435" FontSize="36" FontFamily="Lucida Sans" FontWeight="Bold" TextAlignment="Center" Padding="0,15,0,0"/>
         <TextBlock x:Name="btnAlterarSenha" HorizontalAlignment="Left" Height="80" Margin="50,381,0,0" TextWrapping="Wrap" Text="Alterar Senha" VerticalAlignment="Top" Width="436" FontSize="36" FontFamily="Lucida Sans" FontWeight="Bold" TextAlignment="Center" Padding="0,15,0,0"/>
         <TextBlock x:Name="btnExcluirConta" HorizontalAlignment="Left" Height="80" Margin="50,526,0,0" TextWrapping="Wrap" Text="Excluir Conta" VerticalAlignment="Top" Width="436" FontSize="36" FontFamily="Lucida Sans" FontWeight="Bold" TextAlignment="Center" Padding="0,15,0,0"/>
         <TextBlock x:Name="btnTornarContribuidor" HorizontalAlignment="Left" Height="80" Margin="50,676,0,0" TextWrapping="Wrap" Text="Tornar-se Contribuidor" VerticalAlignment="Top" Width="436" FontSize="30" FontFamily="Lucida Sans" FontWeight="Bold" TextAlignment="Center" Padding="60,17,0,0"/>
         <TextBlock x:Name="btnVoltar" HorizontalAlignment="Left" Height="80" Margin="25,794,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="91" FontSize="30" FontFamily="Lucida Sans" FontWeight="Bold" TextAlignment="Center" Padding="60,17,0,0"/>
+        <TextBlock x:Name="txtConfiguracoes" HorizontalAlignment="Left" Margin="16,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="80" Width="409" FontFamily="Lucida Sans" FontSize="40" FontWeight="Bold" TextAlignment="Center" Padding="0,15,110,0" Text="Configurações"/>
     </Grid>
 </Window>

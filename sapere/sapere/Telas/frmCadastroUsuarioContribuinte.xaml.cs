@@ -40,12 +40,15 @@ namespace sapere.View
                 return false;
             }
         }
-        private bool TornarContribuinte()
+        private void TornarContribuinte()
         {
-            cUsuario.TornarContribuinte(usuario.id, boxCpf, boxIdade, boxTelefone, boxCursoDeGraduacao, boxInstituicaoEnsinoSuperior, boxTipoUsuario);
-            frmMenu frmMenu = new frmMenu(usuario);
-            frmMenu.Show();
-            Close();
+            bool tornouContribuinte = cUsuario.TornarContribuinte(usuario.id, boxCpf.Text, int.Parse(boxIdade.Text), boxTelefone.Text, boxCursoDeGraduacao.Text, boxInstituicaoEnsinoSuperior.Text);
+            if(tornouContribuinte == true)
+            {
+                frmMenu frmMenu = new frmMenu(usuario);
+                frmMenu.Show();
+                Close();
+            }
         }
     }
 }

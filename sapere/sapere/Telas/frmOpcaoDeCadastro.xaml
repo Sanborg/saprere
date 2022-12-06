@@ -9,11 +9,11 @@
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <Image x:Name="imgFundoOpcaoDeCadastro" Margin="-21,-21,-20,-18" Source="/imgFundoOpcaoDeCadastro.png" Stretch="Fill"/>
+        <Image x:Name="imgFundoOpcaoDeCadastro" Margin="-21,-21,-20,-18" Source="/Resources/imgFundoOpcaoDeCadastro.png" Stretch="Fill"/>
 
         <TextBlock x:Name="btnTornarContribuidor" HorizontalAlignment="Left" Height="116" Margin="70,478,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" MouseLeftButtonDown="PressionarBotaoTornarContribuinte"/>
         <TextBlock x:Name="btnNaoTornarContribuidor" HorizontalAlignment="Left" Height="116" Margin="325,478,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" MouseLeftButtonDown="PressionarBotaoNaoTornarContribuinte"/>
-        <TextBlock x:Name="txtInformacaoOpcoes" HorizontalAlignment="Center" Margin="0,266,0,0" TextWrapping="Wrap" Text="Deseja se cadastrar como contribuidor? (somente contribuidores podem enviar respostas a eventos)" VerticalAlignment="Top" Height="68" Width="386" FontFamily="Lucida Sans" FontSize="18" FontWeight="Bold" TextAlignment="Center" MouseLeftButtonDown="PressionarEsqueceuSenha"/>
+        <TextBlock x:Name="txtInformacaoOpcoes" HorizontalAlignment="Center" Margin="0,266,0,0" TextWrapping="Wrap" Text="Deseja se cadastrar como contribuidor? (somente contribuidores podem enviar respostas a eventos)" VerticalAlignment="Top" Height="68" Width="386" FontFamily="Lucida Sans" FontSize="18" FontWeight="Bold" TextAlignment="Center"/>
 
     </Grid>
 </Window>

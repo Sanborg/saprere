@@ -9,9 +9,11 @@
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <Image x:Name="imgFundoCadastroUsuarioComum" Margin="-20,-18,-24,-19" Source="/imgFundoCadastroUsuarioCOmum.png" Stretch="Fill"/>
+        <Image x:Name="imgFundoCadastroUsuarioComum1" Source="/imgFundoCadastroUsuarioComum.png" Stretch="Fill" Margin="-22,-21,-26,-20"/>
 
-        <TextBox x:Name="boxNome" HorizontalAlignment="Left" Margin="144,288,0,0" TextWrapping="Wrap" Text="Usuário" VerticalAlignment="Top" Width="257" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24" TextDecorations="{x:Null}" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+        <Image x:Name="imgFundoCadastroUsuarioComum" Margin="-20,-18,-24,-19" Source="/Resources/imgFundoCadastroUsuarioComum.png" Stretch="Fill"/>
+
+        <TextBox x:Name="boxNome" HorizontalAlignment="Left" Margin="144,286,0,0" TextWrapping="Wrap" Text="Usuário" VerticalAlignment="Top" Width="257" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24" TextDecorations="{x:Null}" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -21,7 +23,7 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="boxEmail" HorizontalAlignment="Left" Margin="146,378,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="257" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24" TextDecorations="{x:Null}" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
+        <TextBox x:Name="boxEmail" HorizontalAlignment="Left" Margin="146,376,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="257" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24" TextDecorations="{x:Null}" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -31,13 +33,13 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBlock x:Name="btnCadastro" HorizontalAlignment="Left" Margin="166,644,0,0" TextWrapping="Wrap" Text="CADASTRAR" VerticalAlignment="Top" Height="51" Width="206" FontFamily="Lucida Sans" FontSize="24" FontWeight="Bold" TextAlignment="Center" Padding="0,10,0,0" PreviewMouseLeftButtonDown="CadastrarUsuario"/>
+        <TextBlock x:Name="btnCadastro" HorizontalAlignment="Left" Margin="166,642,0,0" TextWrapping="Wrap" Text="CADASTRAR" VerticalAlignment="Top" Height="51" Width="206" FontFamily="Lucida Sans" FontSize="24" FontWeight="Bold" TextAlignment="Center" Padding="0,10,0,0" PreviewMouseLeftButtonDown="CadastrarUsuario"/>
         <TextBlock x:Name="btnVisualizarConfirmaSenhaCadastro" HorizontalAlignment="Left" Margin="372,553,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="40"/>
         <TextBlock x:Name="btnVisualizarSenhaCadastro" HorizontalAlignment="Left" Margin="374,461,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="40"/>
         <TextBlock x:Name="btnVoltar" HorizontalAlignment="Left" Margin="27,783,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="79" Width="90"/>
-        <PasswordBox x:Name="boxSenha" HorizontalAlignment="Center" Margin="0,464,0,0" VerticalAlignment="Top" Width="218" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24"/>
-        <PasswordBox x:Name="boxConfirmaSenha" HorizontalAlignment="Center" Margin="0,556,0,0" VerticalAlignment="Top" Width="218" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24"/>
-        <TextBlock x:Name="txtInformacao" HorizontalAlignment="Center" Margin="0,213,0,0" TextWrapping="Wrap" Text="Preencha os campos para cadastrar-se" VerticalAlignment="Top" Height="31" Width="357" FontFamily="Lucida Sans" FontSize="18" FontWeight="Bold" TextAlignment="Center" MouseLeftButtonDown="PressionarEsqueceuSenha"/>
+        <PasswordBox x:Name="boxSenha" HorizontalAlignment="Center" Margin="0,462,0,0" VerticalAlignment="Top" Width="218" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24"/>
+        <PasswordBox x:Name="boxConfirmaSenha" HorizontalAlignment="Center" Margin="0,554,0,0" VerticalAlignment="Top" Width="218" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24"/>
+        <TextBlock x:Name="txtInformacao" HorizontalAlignment="Center" Margin="0,213,0,0" TextWrapping="Wrap" Text="Preencha os campos para cadastrar-se" VerticalAlignment="Top" Height="31" Width="357" FontFamily="Lucida Sans" FontSize="18" FontWeight="Bold" TextAlignment="Center"/>
 
     </Grid>
 </Window>
