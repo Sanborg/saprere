@@ -42,7 +42,9 @@ namespace sapere.View
 
         private void EsqueceuSenhaUsuario(object sender, MouseButtonEventArgs e)
         {
-
+            frmEsqueceuSenha frmEsqueceuSenha = new frmEsqueceuSenha();
+            frmEsqueceuSenha.Show();
+            Close();
         }
 
         private bool VerificaCampos()

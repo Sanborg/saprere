@@ -1,17 +1,17 @@
-﻿<Window x:Class="sapere.View.Telas.frmEsqueceuSenha"
+﻿<Window x:Class="sapere.View.frmEsqueceuSenha"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:sapere.View.Telas"
+        xmlns:local="clr-namespace:sapere.View"
         mc:Ignorable="d"
-        Title="frmInsercaoCodigo" Height="920" Width="523"
+        Title="frmCadastroUsuarioComum" Height="920" Width="523"
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <Image Margin="-21,-20,-21,-21" Source="/Resources/imgFundoEsqueceuSenha.png" Stretch="Fill"/>
-        <TextBlock x:Name="btnVoltar" HorizontalAlignment="Left" Margin="27,798,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="79" Width="90"/>
-        <TextBlock x:Name="btnEnviarEmail" HorizontalAlignment="Left" Margin="160,536,0,0" TextWrapping="Wrap" Text="ENVIAR EMAIL" VerticalAlignment="Top" Height="51" Width="206" FontFamily="Lucida Sans" FontSize="24" FontWeight="Bold" TextAlignment="Center" Padding="0,10,0,0"/>
+        <Image Margin="-21,-21,-20,-19" Source="/Resources/imgFundoEsqueceuSenha.png" Stretch="Fill"/>
+
+        <TextBlock x:Name="txtInformacao" HorizontalAlignment="Left" Margin="83,267,0,0" TextWrapping="Wrap" Text="Insira o email utilizado na sua conta para enviarmos um código de alteração de senha." VerticalAlignment="Top" Height="73" Width="357" FontFamily="Lucida Sans" FontSize="18" FontWeight="Bold" TextAlignment="Center"/>
         <TextBox x:Name="boxEmail" HorizontalAlignment="Left" Margin="146,414,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="257" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24" TextDecorations="{x:Null}" FontWeight="Bold" RenderTransformOrigin="0.5,0.5">
             <TextBox.RenderTransform>
                 <TransformGroup>
@@ -22,7 +22,8 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBlock x:Name="txtInformacao" HorizontalAlignment="Center" Margin="0,267,0,0" TextWrapping="Wrap" Text="Insira o email utilizado na sua conta para enviarmos um código de alteração de senha." VerticalAlignment="Top" Height="73" Width="357" FontFamily="Lucida Sans" FontSize="18" FontWeight="Bold" TextAlignment="Center"/>
+        <TextBlock x:Name="btnEnviarEmail" HorizontalAlignment="Center" Margin="0,536,0,0" TextWrapping="Wrap" Text="ENVIAR EMAIL" VerticalAlignment="Top" Height="51" Width="206" FontFamily="Lucida Sans" FontSize="24" FontWeight="Bold" TextAlignment="Center" Padding="0,10,0,0"/>
+        <TextBlock x:Name="btnVoltar" HorizontalAlignment="Left" Margin="25,799,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="79" Width="90"/>
 
     </Grid>
 </Window>
