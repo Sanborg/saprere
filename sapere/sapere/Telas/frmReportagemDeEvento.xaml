@@ -1,0 +1,99 @@
+﻿<Window x:Class="sapere.View.frmReportagemDeEvento"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:sapere.View"
+        mc:Ignorable="d"
+        Title="frmReportagemDeEvento" Height="920" Width="523
+        "
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Image x:Name="imgFundoReportagemDeEvento" Source="/imgFundoReportagemDeEvento.png" Stretch="Fill" Margin="-28,-22,-44,-76"/>
+        <TextBlock x:Name="txtReportarEvento" HorizontalAlignment="Left" Margin="10,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="80" Width="441" FontFamily="Lucida Sans" FontSize="39" FontWeight="Bold" TextAlignment="Center" Padding="0,15,110,0" MouseLeftButtonDown="RealizarLogin" Text="Reportar Evento"/>
+        <TextBox x:Name="boxDescricao" HorizontalAlignment="Center" Margin="0,262,0,0" TextWrapping="Wrap" Text="Descrição" VerticalAlignment="Top" Width="405" Height="137" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" TextDecorations="{x:Null}" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FF545454" FontSize="14">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.261"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="boxTitulo_Copy" HorizontalAlignment="Center" Margin="0,178,0,0" TextWrapping="Wrap" Text="Título" VerticalAlignment="Top" Width="405" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24" TextDecorations="{x:Null}" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FF545454">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.261"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <ComboBox x:Name="comEscopoDoEvento" HorizontalAlignment="Center" VerticalAlignment="Center" Width="414" Height="44" Background="{x:Null}" BorderBrush="{x:Null}" Cursor="" Tag=""/>
+        <TextBlock x:Name="btnAdicionarFoto" Margin="20,500,393,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="106" FontFamily="Lucida Sans" FontSize="39" FontWeight="Bold" TextAlignment="Center" Padding="0,15,110,0" MouseLeftButtonDown="RealizarLogin" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="btnAdicionarVideo" Margin="136,500,258,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="106" FontFamily="Lucida Sans" FontSize="39" FontWeight="Bold" TextAlignment="Center" Padding="0,15,110,0" MouseLeftButtonDown="RealizarLogin" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="btnAdicionarAudio" Margin="264,500,116,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="106" FontFamily="Lucida Sans" FontSize="39" FontWeight="Bold" TextAlignment="Center" Padding="0,15,110,0" MouseLeftButtonDown="RealizarLogin" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBlock x:Name="btnAdicionarLocalizacao" Margin="405,500,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="106" FontFamily="Lucida Sans" FontSize="39" FontWeight="Bold" TextAlignment="Center" Padding="0,15,110,0" MouseLeftButtonDown="RealizarLogin" RenderTransformOrigin="0.5,0.5">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform>
+        </TextBlock>
+        <TextBox x:Name="boxData" HorizontalAlignment="Left" Margin="39,652,0,0" TextWrapping="Wrap" Text="Data" VerticalAlignment="Top" Width="251" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24" TextDecorations="{x:Null}" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FF545454">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.261"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBox x:Name="boxHora" HorizontalAlignment="Left" Margin="328,649,0,0" TextWrapping="Wrap" Text="Horário" VerticalAlignment="Top" Width="169" Height="50" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24" TextDecorations="{x:Null}" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FF545454">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.261"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBlock x:Name="btnEnviar" HorizontalAlignment="Left" Margin="279,780,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="80" Width="217" FontFamily="Lucida Sans" FontSize="35" FontWeight="Bold" TextAlignment="Center" Padding="0,18,0,0" MouseLeftButtonDown="RealizarLogin" Text="Enviar"/>
+        <TextBlock x:Name="btnVoltar" HorizontalAlignment="Left" Margin="14,791,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="86" Width="97" FontFamily="Lucida Sans" FontSize="35" FontWeight="Bold" TextAlignment="Center" Padding="0,18,0,0" MouseLeftButtonDown="RealizarLogin"/>
+    </Grid>
+</Window>

@@ -7,102 +7,102 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="frmAlteracaoDeSenha.xaml.cs">
+    <Compile Update="Telas\frmAlteracaoDeSenha.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="frmCadastroUsuarioComum.xaml.cs">
+    <Compile Update="Telas\frmCadastroUsuarioComum.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="frmCadastroUsuarioContribuinte.xaml.cs">
+    <Compile Update="Telas\frmCadastroUsuarioContribuinte.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="frmConfiguracoes.xaml.cs">
+    <Compile Update="Telas\frmConfiguracoes.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="frmEsqueceuSenha.xaml.cs">
+    <Compile Update="Telas\frmEsqueceuSenha.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="frmInsercaoCodigo.xaml.cs">
+    <Compile Update="Telas\frmInsercaoCodigo.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="frmLogin.xaml.cs">
+    <Compile Update="Telas\frmLogin.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="frmMenu.xaml.cs">
+    <Compile Update="Telas\frmMenu.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="frmOpcaoDeCadastro.xaml.cs">
+    <Compile Update="Telas\frmOpcaoDeCadastro.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="frmPerfil.xaml.cs">
+    <Compile Update="Telas\frmPerfil.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="frmPesquisaDeEvento.xaml.cs">
+    <Compile Update="Telas\frmPesquisaDeEvento.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="frmReportagemDeEvento.xaml.cs">
+    <Compile Update="Telas\frmReportagemDeEvento.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="frmRespostaDeEvento.xaml.cs">
+    <Compile Update="Telas\frmRespostaDeEvento.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="frmVisualizacaoEventoNaoRespondido.xaml.cs">
+    <Compile Update="Telas\frmVisualizacaoEventoNaoRespondido.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="frmVisualizacaoEventoRespondidoParte1.xaml.cs">
+    <Compile Update="Telas\frmVisualizacaoEventoRespondidoParte1.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="frmVisualizacaoEventoRespondidoParte2.xaml.cs">
+    <Compile Update="Telas\frmVisualizacaoEventoRespondidoParte2.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="frmAlteracaoDeSenha.xaml">
+    <Page Update="Telas\frmAlteracaoDeSenha.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="frmCadastroUsuarioComum.xaml">
+    <Page Update="Telas\frmCadastroUsuarioComum.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="frmCadastroUsuarioContribuinte.xaml">
+    <Page Update="Telas\frmCadastroUsuarioContribuinte.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="frmConfiguracoes.xaml">
+    <Page Update="Telas\frmConfiguracoes.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="frmEsqueceuSenha.xaml">
+    <Page Update="Telas\frmEsqueceuSenha.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="frmInsercaoCodigo.xaml">
+    <Page Update="Telas\frmInsercaoCodigo.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="frmLogin.xaml">
+    <Page Update="Telas\frmLogin.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="frmMenu.xaml">
+    <Page Update="Telas\frmMenu.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="frmOpcaoDeCadastro.xaml">
+    <Page Update="Telas\frmOpcaoDeCadastro.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="frmPerfil.xaml">
+    <Page Update="Telas\frmPerfil.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="frmPesquisaDeEvento.xaml">
+    <Page Update="Telas\frmPesquisaDeEvento.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="frmReportagemDeEvento.xaml">
+    <Page Update="Telas\frmReportagemDeEvento.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="frmRespostaDeEvento.xaml">
+    <Page Update="Telas\frmRespostaDeEvento.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="frmVisualizacaoEventoNaoRespondido.xaml">
+    <Page Update="Telas\frmVisualizacaoEventoNaoRespondido.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="frmVisualizacaoEventoRespondidoParte1.xaml">
+    <Page Update="Telas\frmVisualizacaoEventoRespondidoParte1.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="frmVisualizacaoEventoRespondidoParte2.xaml">
+    <Page Update="Telas\frmVisualizacaoEventoRespondidoParte2.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

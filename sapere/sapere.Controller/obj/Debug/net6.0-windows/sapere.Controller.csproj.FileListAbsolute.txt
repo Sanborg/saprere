@@ -1,9 +1,6 @@
 C:\Users\rafas\source\repos\Sanborg\saprere\sapere\sapere.Controller\bin\Debug\net6.0-windows\sapere.Model.deps.json
 C:\Users\rafas\source\repos\Sanborg\saprere\sapere\sapere.Controller\bin\Debug\net6.0-windows\sapere.Model.runtimeconfig.json
 C:\Users\rafas\source\repos\Sanborg\saprere\sapere\sapere.Controller\bin\Debug\net6.0-windows\sapere.Model.exe
-C:\Users\rafas\source\repos\Sanborg\saprere\sapere\sapere.Controller\bin\Debug\net6.0-windows\sapere.View.deps.json
-C:\Users\rafas\source\repos\Sanborg\saprere\sapere\sapere.Controller\bin\Debug\net6.0-windows\sapere.View.runtimeconfig.json
-C:\Users\rafas\source\repos\Sanborg\saprere\sapere\sapere.Controller\bin\Debug\net6.0-windows\sapere.View.exe
 C:\Users\rafas\source\repos\Sanborg\saprere\sapere\sapere.Controller\bin\Debug\net6.0-windows\sapere.Controller.exe
 C:\Users\rafas\source\repos\Sanborg\saprere\sapere\sapere.Controller\bin\Debug\net6.0-windows\sapere.Controller.deps.json
 C:\Users\rafas\source\repos\Sanborg\saprere\sapere\sapere.Controller\bin\Debug\net6.0-windows\sapere.Controller.runtimeconfig.json
@@ -11,9 +8,7 @@ C:\Users\rafas\source\repos\Sanborg\saprere\sapere\sapere.Controller\bin\Debug\n
 C:\Users\rafas\source\repos\Sanborg\saprere\sapere\sapere.Controller\bin\Debug\net6.0-windows\sapere.Controller.pdb
 C:\Users\rafas\source\repos\Sanborg\saprere\sapere\sapere.Controller\bin\Debug\net6.0-windows\MySqlConnector.dll
 C:\Users\rafas\source\repos\Sanborg\saprere\sapere\sapere.Controller\bin\Debug\net6.0-windows\sapere.Model.dll
-C:\Users\rafas\source\repos\Sanborg\saprere\sapere\sapere.Controller\bin\Debug\net6.0-windows\sapere.View.dll
 C:\Users\rafas\source\repos\Sanborg\saprere\sapere\sapere.Controller\bin\Debug\net6.0-windows\sapere.Model.pdb
-C:\Users\rafas\source\repos\Sanborg\saprere\sapere\sapere.Controller\bin\Debug\net6.0-windows\sapere.View.pdb
 C:\Users\rafas\source\repos\Sanborg\saprere\sapere\sapere.Controller\obj\Debug\net6.0-windows\sapere.Controller.csproj.AssemblyReference.cache
 C:\Users\rafas\source\repos\Sanborg\saprere\sapere\sapere.Controller\obj\Debug\net6.0-windows\App.g.cs
 C:\Users\rafas\source\repos\Sanborg\saprere\sapere\sapere.Controller\obj\Debug\net6.0-windows\sapere.Controller_MarkupCompile.cache

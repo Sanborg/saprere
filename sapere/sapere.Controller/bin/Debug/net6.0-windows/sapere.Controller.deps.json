@@ -8,8 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "sapere.Controller/1.0.0": {
         "dependencies": {
-          "sapere.Model": "1.0.0",
-          "sapere.View": "1.0.0"
+          "sapere.Model": "1.0.0"
         },
         "runtime": {
           "sapere.Controller.dll": {}
@@ -30,11 +29,6 @@
         "runtime": {
           "sapere.Model.dll": {}
         }
-      },
-      "sapere.View/1.0.0": {
-        "runtime": {
-          "sapere.View.dll": {}
-        }
       }
     }
   },
@@ -52,11 +46,6 @@
       "hashPath": "mysqlconnector.2.2.1.nupkg.sha512"
     },
     "sapere.Model/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "sapere.View/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
