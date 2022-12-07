@@ -7,7 +7,7 @@ using MySqlConnector;
 
 public class ConsultasEvento
 {
-    public static bool CriarEvento(string idUsuarioCriador, string titulo, string descricao, string escopoDoEvento, string localDeVisualizacao, DateTime dataHoraVisualizacao, string imagem = "", string video = "", string audio = "")
+    public static bool CriarEvento(string idUsuarioCriador, string titulo, string descricao, string escopoDoEvento, string localDeVisualizacao, DateTime dataHoraVisualizacao)
     {
         var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
         Usuario usuario = new Usuario();
@@ -18,17 +18,14 @@ public class ConsultasEvento
             conexao.Open();
             var comando = conexao.CreateCommand();
             comando.CommandText = @"
-                  INSERT INTO Usuario (idUsuarioCriador, titulo, descricao, escopoDoEvento, imagem, video, audio, localDeVisualizacao, dataHoraVisualizacao)
-                  VALUES (@idUsuarioCriador,@titulo,@descricao,@escopoDoEvento,@imagem,@video,@audio,@localDeVisualizacao,@dataHoraVisualizacao)";
+                  INSERT INTO Usuario (idUsuarioCriador, titulo, descricao, escopoDoEvento, localDeVisualizacao, dataHoraVisualizacao)
+                  VALUES (@idUsuarioCriador,@titulo,@descricao,@escopoDoEvento,@localDeVisualizacao,@dataHoraVisualizacao)";
             comando.Parameters.AddWithValue("@idUsuarioCriador", idUsuarioCriador);
             comando.Parameters.AddWithValue("@titulo", titulo);
             comando.Parameters.AddWithValue("@descricao", descricao);
             comando.Parameters.AddWithValue("@escopoDoEvento", escopoDoEvento);
             comando.Parameters.AddWithValue("@localDeVisualizacao", localDeVisualizacao);
             comando.Parameters.AddWithValue("@dataHoraVisualizacao", dataHoraVisualizacao);
-            comando.Parameters.AddWithValue("@imagem", imagem);
-            comando.Parameters.AddWithValue("@video", video);
-            comando.Parameters.AddWithValue("@audio", audio);
             var leitura = comando.ExecuteReader();
 
             foiCriado = true;
@@ -72,9 +69,6 @@ public class ConsultasEvento
                 evento.titulo = leitura.GetString("titulo");
                 evento.descricao = leitura.GetString("descricao");
                 evento.escopoDoEvento = leitura.GetString("escopoDoEvento");
-                evento.imagem = leitura.GetString("imagem");
-                evento.video = leitura.GetString("video");
-                evento.audio = leitura.GetString("audio");
                 evento.descricao = leitura.GetString("descricao");
                 evento.localDeVisualizacao = leitura.GetString("localDeVisualizacao");
                 evento.dataHoraVisualizacao = leitura.GetDateTime("dataHoraVisualizacao");
@@ -137,7 +131,7 @@ public class ConsultasEvento
 
         return foiRespondido;
     }
-    public static bool ExcluirUsuario(int id)
+    public static bool ExcluirEvento(int id)
     {
         var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
         bool foiExcluido = false;
@@ -187,9 +181,6 @@ public class ConsultasEvento
                 evento.titulo = leitura.GetString("titulo");
                 evento.descricao = leitura.GetString("descricao");
                 evento.escopoDoEvento = leitura.GetString("escopoDoEvento");
-                evento.imagem = leitura.GetString("imagem");
-                evento.video = leitura.GetString("video");
-                evento.audio = leitura.GetString("audio");
                 evento.descricao = leitura.GetString("descricao");
                 evento.localDeVisualizacao = leitura.GetString("localDeVisualizacao");
                 evento.dataHoraVisualizacao = leitura.GetDateTime("dataHoraVisualizacao");
@@ -235,9 +226,6 @@ public class ConsultasEvento
                 evento.titulo = leitura.GetString("titulo");
                 evento.descricao = leitura.GetString("descricao");
                 evento.escopoDoEvento = leitura.GetString("escopoDoEvento");
-                evento.imagem = leitura.GetString("imagem");
-                evento.video = leitura.GetString("video");
-                evento.audio = leitura.GetString("audio");
                 evento.descricao = leitura.GetString("descricao");
                 evento.localDeVisualizacao = leitura.GetString("localDeVisualizacao");
                 evento.dataHoraVisualizacao = leitura.GetDateTime("dataHoraVisualizacao");

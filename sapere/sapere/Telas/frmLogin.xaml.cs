@@ -36,32 +36,6 @@ namespace sapere.View
                 string email = boxEmail.Text;
                 string senha = boxSenha.Password;
                 Login(email, senha);
-
-            }
-        }
-
-        private void EsqueceuSenhaUsuario(object sender, MouseButtonEventArgs e)
-        {
-            frmEsqueceuSenha frmEsqueceuSenha = new frmEsqueceuSenha();
-            frmEsqueceuSenha.Show();
-            Close();
-        }
-
-        private bool VerificaCampos()
-        {
-            if (boxEmail.Text != "" && boxSenha.Password != "")
-            {
-                return true;
-            }
-            else
-            {
-                MessageBoxResult result = MessageBox.Show(
-                "Preencha todos os campos",
-                "Atenção",
-                MessageBoxButton.OK,
-                MessageBoxImage.Warning
-                );
-                return false;
             }
         }
         public void Login(string email, string senha)
@@ -151,7 +125,26 @@ namespace sapere.View
         }
         private void PressionarEsqueceuSenha(object sender, MouseButtonEventArgs e)
         {
-
+            frmEsqueceuSenha frmEsqueceuSenha = new frmEsqueceuSenha();
+            frmEsqueceuSenha.Show();
+            Close();
+        }
+        private bool VerificaCampos()
+        {
+            if (boxEmail.Text != "" && boxSenha.Password != "")
+            {
+                return true;
+            }
+            else
+            {
+                MessageBoxResult result = MessageBox.Show(
+                "Preencha todos os campos",
+                "Atenção",
+                MessageBoxButton.OK,
+                MessageBoxImage.Warning
+                );
+                return false;
+            }
         }
     }
 }

@@ -13,7 +13,7 @@
         <Image x:Name="imgFundoInsercaoCodigo" Margin="-21,-20,-21,-19" Source="/Resources/imgFundoInsercaoCodigo.png" Stretch="Fill"/>
 
         <TextBox x:Name="boxCodigoDeRecuperacao" HorizontalAlignment="Left" Margin="133,415,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="273" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24" TextDecorations="{x:Null}" FontWeight="Bold"/>
-        <TextBlock x:Name="btnOk" HorizontalAlignment="Left" Margin="164,557,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="55" Width="210" FontFamily="Lucida Sans" FontSize="24" FontWeight="Bold" TextAlignment="Center" Padding="0,15,0,0" Text="OK"/>
+        <TextBlock x:Name="btnOk" HorizontalAlignment="Left" Margin="164,557,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="55" Width="210" FontFamily="Lucida Sans" FontSize="24" FontWeight="Bold" TextAlignment="Center" Padding="0,15,0,0" Text="OK" MouseLeftButtonDown="PressionarBtnOk"/>
         <TextBlock x:Name="txtCadastro" HorizontalAlignment="Left" Margin="90,259,0,0" TextWrapping="Wrap" Text="Insira o código recebido." VerticalAlignment="Top" Height="31" Width="358" FontFamily="Lucida Sans" FontSize="18" FontWeight="Bold" TextAlignment="Center"/>
         <TextBlock x:Name="btnOk_Copy" HorizontalAlignment="Left" Margin="164,645,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="55" Width="210" FontFamily="Lucida Sans" FontSize="20" FontWeight="Bold" TextAlignment="Center" Padding="0,15,0,0" Text="REENVIAR CÓDIGO"/>
 

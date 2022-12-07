@@ -6,36 +6,40 @@ using System.Threading.Tasks;
 
 public class cUsuario
 {
-    public static bool CadastrarUsuario(string nome, string senha)
+    public static bool CadastrarUsuario(string nome, string email, string senha)
     {
-        return ConsultasUsuario.CadastrarUsuario(nome, senha);
+        return ConsultasUsuario.CadastrarUsuario(nome, email, senha);
     }
     public static Usuario BuscarDadosUsuario(string email, string senha)
     {
         return ConsultasUsuario.BuscarDadosUsuario(email, senha);
     }
-    public static bool EditaPerfilUsuarioComum(int id, string nome, string senha)
+    public static bool EditaPerfilUsuarioComum(int id, string nome, string email)
     {
-        return ConsultasUsuario.EditaPerfilUsuarioComum(id, nome, senha);
+        return ConsultasUsuario.EditarPerfilUsuarioComum(id, nome, email);
     }
-    public static bool EditaPerfilUsuarioContribuidor(int id, string cpf, string nome, string senha, string telefone)
+    public static bool EditaPerfilUsuarioContribuidor(int id, string cpf, string nome, string email, string telefone)
     {
-        return ConsultasUsuario.EditaPerfilUsuarioContribuidor(id, cpf, nome, senha, telefone);
+        return ConsultasUsuario.EditarPerfilUsuarioContribuidor(id, cpf, nome, email, telefone);
     }
     public static bool ExcluirUsuario(int id)
     {
         return ConsultasUsuario.ExcluirUsuario(id);
     }
-    public static bool TornarContribuinte(int id, string cpf, int idade, string telefone, string cursoDeGraduacao, string instituicaoEnsinoSuperior, string fotoDiploma = "")
+    public static bool TornarContribuinte(int id, string cpf, int idade, string telefone, string cursoDeGraduacao, string instituicaoEnsinoSuperior)
     {
-        return ConsultasUsuario.TornarContribuinte(id, cpf, idade, telefone, cursoDeGraduacao, instituicaoEnsinoSuperior, fotoDiploma);
+        return ConsultasUsuario.TornarContribuinte(id, cpf, idade, telefone, cursoDeGraduacao, instituicaoEnsinoSuperior);
     }
     public static bool InserirDescricao(int id, string descricao)
     {
         return ConsultasUsuario.InserirDescricao(id, descricao);
     }
-    public static bool AlterarSenha(int id, string senha)
+    public static bool AlterarSenha(string email, string senha)
     {
-        return ConsultasUsuario.AlterarSenha(id, senha);
+        return ConsultasUsuario.AlterarSenha(email, senha);
+    }
+    public static bool VerificaExistenciaEmail(string email)
+    {
+        return ConsultasUsuario.VerificaExistenciaEmail(email);
     }
 }

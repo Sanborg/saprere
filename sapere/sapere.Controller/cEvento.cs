@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 public class cEvento
 {
-    public static bool CriarEvento(string idUsuarioCriador, string titulo, string descricao, string escopoDoEvento, string localDeVisualizacao, DateTime dataHoraVisualizacao, string imagem = "", string video = "", string audio = "")
+    public static bool CriarEvento(string idUsuarioCriador, string titulo, string descricao, string escopoDoEvento, string localDeVisualizacao, DateTime dataHoraVisualizacao)
     {
-        return ConsultasEvento.CriarEvento(idUsuarioCriador, titulo, descricao, escopoDoEvento, localDeVisualizacao, dataHoraVisualizacao, imagem, video, audio);
+        return ConsultasEvento.CriarEvento(idUsuarioCriador, titulo, descricao, escopoDoEvento, localDeVisualizacao, dataHoraVisualizacao);
     }
     public static Evento BuscarEvento(string titulo)
     {
@@ -19,9 +19,9 @@ public class cEvento
     {
         return ConsultasEvento.ResponderEvento(id, idUsuarioRespondente, resposta, link1, link2, link3);
     }
-    public static bool ExcluirUsuario(int id)
+    public static bool ExcluirEvento(int id)
     {
-        return ConsultasEvento.ExcluirUsuario(id);
+        return ConsultasEvento.ExcluirEvento(id);
     }
     public static Evento VisualizarEventosReportados(int idUsuarioCriador)
     {

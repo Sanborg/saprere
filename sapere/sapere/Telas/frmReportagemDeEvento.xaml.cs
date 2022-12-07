@@ -19,9 +19,15 @@ namespace sapere.View
     /// </summary>
     public partial class frmReportagemDeEvento : Window
     {
+        public Usuario usuario { get; }
         public frmReportagemDeEvento()
         {
             InitializeComponent();
+        }
+        public frmReportagemDeEvento(Usuario usuario)
+        {
+            InitializeComponent();
+            this.usuario = usuario;
         }
     }
 }

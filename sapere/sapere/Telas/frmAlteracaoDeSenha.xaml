@@ -9,15 +9,12 @@
         ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <!--<Image Source="/imgFundoAlteracaoDeSenha.png" Stretch="Fill" Margin="-20,-22,-21,-20"/>-->
 
         <Image x:Name="imgFundoAlteracaoDeSenha" Margin="-22,-21,-22,-18" Source="/Resources/imgFundoAlteracaoDeSenha.png" Stretch="Fill"/>
 
         <PasswordBox x:Name="boxSenha" HorizontalAlignment="Left" Margin="152,380,0,0" VerticalAlignment="Top" Width="258" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24"/>
         <PasswordBox x:Name="boxConfirmaSenha" HorizontalAlignment="Left" Margin="152,469,0,0" VerticalAlignment="Top" Width="258" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24"/>
-        <TextBlock x:Name="btnAlterarSenha" HorizontalAlignment="Left" Margin="160,591,0,0" TextWrapping="Wrap" Text="ALTERAR SENHA" VerticalAlignment="Top" Height="55" Width="206" FontFamily="Lucida Sans" FontSize="24" FontWeight="Bold" TextAlignment="Center" Padding="0,15,0,0"/>
-        <PasswordBox x:Name="boxSenha1" HorizontalAlignment="Left" Margin="154,380,0,0" VerticalAlignment="Top" Width="256" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24"/>
-        <PasswordBox x:Name="boxConfirmarSenha" HorizontalAlignment="Left" Margin="152,469,0,0" VerticalAlignment="Top" Width="256" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24"/>
+        <TextBlock x:Name="btnAlterarSenha" HorizontalAlignment="Left" Margin="160,591,0,0" TextWrapping="Wrap" Text="ALTERAR SENHA" VerticalAlignment="Top" Height="55" Width="206" FontFamily="Lucida Sans" FontSize="24" FontWeight="Bold" TextAlignment="Center" Padding="0,15,0,0" MouseLeftButtonDown="PressionarBtnAlterarSenha"/>
         <TextBlock x:Name="txtInformacao" HorizontalAlignment="Center" Margin="0,264,0,0" TextWrapping="Wrap" Text="Insira a nova senha" VerticalAlignment="Top" Height="31" Width="357" FontFamily="Lucida Sans" FontSize="18" FontWeight="Bold" TextAlignment="Center"/>
 
     </Grid>

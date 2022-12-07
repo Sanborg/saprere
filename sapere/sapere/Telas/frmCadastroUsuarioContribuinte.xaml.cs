@@ -37,18 +37,37 @@ namespace sapere.View
             }
             else
             {
+                MessageBoxResult result = MessageBox.Show(
+                "Preencha todos os campos",
+                "Atenção",
+                MessageBoxButton.OK,
+                MessageBoxImage.Warning
+                );
                 return false;
             }
         }
         private void TornarContribuinte()
         {
-            bool tornouContribuinte = cUsuario.TornarContribuinte(usuario.id, boxCpf.Text, int.Parse(boxIdade.Text), boxTelefone.Text, boxCursoDeGraduacao.Text, boxInstituicaoEnsinoSuperior.Text);
-            if(tornouContribuinte == true)
+            if(VerificaCampos() == true)
             {
-                frmMenu frmMenu = new frmMenu(usuario);
-                frmMenu.Show();
-                Close();
+                bool tornouContribuinte = cUsuario.TornarContribuinte(usuario.id, boxCpf.Text, int.Parse(boxIdade.Text), boxTelefone.Text, boxCursoDeGraduacao.Text, boxInstituicaoEnsinoSuperior.Text);
+                if (tornouContribuinte == true)
+                {
+                    frmMenu frmMenu = new frmMenu(usuario);
+                    frmMenu.Show();
+                    Close();
+                }
             }
+        }
+        private void PressionarBtnTornarContribuidor(object sender, MouseButtonEventArgs e)
+        {
+            TornarContribuinte();
+        }
+        private void PressionarBtnVoltar(object sender, MouseButtonEventArgs e)
+        {
+            frmOpcaoDeCadastro frmOpcaoDeCadastro = new frmOpcaoDeCadastro(usuario);
+            frmOpcaoDeCadastro.Show();
+            Close();
         }
     }
 }

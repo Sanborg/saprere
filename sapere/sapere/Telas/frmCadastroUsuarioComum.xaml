@@ -33,10 +33,10 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBlock x:Name="btnCadastro" HorizontalAlignment="Left" Margin="166,642,0,0" TextWrapping="Wrap" Text="CADASTRAR" VerticalAlignment="Top" Height="51" Width="206" FontFamily="Lucida Sans" FontSize="24" FontWeight="Bold" TextAlignment="Center" Padding="0,10,0,0" PreviewMouseLeftButtonDown="CadastrarUsuario"/>
+        <TextBlock x:Name="btnCadastro" HorizontalAlignment="Left" Margin="166,642,0,0" TextWrapping="Wrap" Text="CADASTRAR" VerticalAlignment="Top" Height="51" Width="206" FontFamily="Lucida Sans" FontSize="24" FontWeight="Bold" TextAlignment="Center" Padding="0,10,0,0" MouseLeftButtonDown="PressionarBtnCadastrarUsuario"/>
         <TextBlock x:Name="btnVisualizarConfirmaSenhaCadastro" HorizontalAlignment="Left" Margin="372,553,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="40"/>
         <TextBlock x:Name="btnVisualizarSenhaCadastro" HorizontalAlignment="Left" Margin="374,461,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="35" Width="40"/>
-        <TextBlock x:Name="btnVoltar" HorizontalAlignment="Left" Margin="27,783,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="79" Width="90"/>
+        <TextBlock x:Name="btnVoltar" HorizontalAlignment="Left" Margin="27,783,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="79" Width="90" MouseLeftButtonDown="PressionarBtnVoltar"/>
         <PasswordBox x:Name="boxSenha" HorizontalAlignment="Center" Margin="0,462,0,0" VerticalAlignment="Top" Width="218" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24"/>
         <PasswordBox x:Name="boxConfirmaSenha" HorizontalAlignment="Center" Margin="0,554,0,0" VerticalAlignment="Top" Width="218" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24"/>
         <TextBlock x:Name="txtInformacao" HorizontalAlignment="Center" Margin="0,213,0,0" TextWrapping="Wrap" Text="Preencha os campos para cadastrar-se" VerticalAlignment="Top" Height="31" Width="357" FontFamily="Lucida Sans" FontSize="18" FontWeight="Bold" TextAlignment="Center"/>

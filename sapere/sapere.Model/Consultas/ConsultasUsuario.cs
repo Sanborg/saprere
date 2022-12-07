@@ -7,7 +7,7 @@ using MySqlConnector;
 
 public class ConsultasUsuario
 {
-    public static bool CadastrarUsuario(string nome, string senha)
+    public static bool CadastrarUsuario(string nome, string email, string senha)
     {
         var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
         Usuario usuario = new Usuario();
@@ -19,9 +19,10 @@ public class ConsultasUsuario
             conexao.Open();
             var comando = conexao.CreateCommand();
             comando.CommandText = @"
-                  INSERT INTO Usuario (nome, senha, tipoUsuario)
-                  VALUES (@nome,@senha,@tipoUsuario)";
+                  INSERT INTO Usuario (nome, email, senha, tipoUsuario)
+                  VALUES (@nome,@email,@senha,@tipoUsuario)";
             comando.Parameters.AddWithValue("@nome", nome);
+            comando.Parameters.AddWithValue("@email", email);
             comando.Parameters.AddWithValue("@senha", senhaCriptografada);
             comando.Parameters.AddWithValue("@tipoUsuario", "comum");
             var leitura = comando.ExecuteReader();
@@ -73,7 +74,6 @@ public class ConsultasUsuario
                 usuario.descricao = leitura.GetString("descricao");
                 usuario.cursoDeGraduacao = leitura.GetString("cursoDeGraduacao");
                 usuario.instituicaoEnsinoSuperior = leitura.GetString("instituicaoEnsinoSuperior");
-                usuario.fotoDiploma = leitura.GetString("fotoDiploma");
             }
 
         }
@@ -90,28 +90,22 @@ public class ConsultasUsuario
         }
         return usuario;
     }
-    public static bool EditaPerfilUsuarioComum(int id, string nome, string senha)
+    public static bool EditarPerfilUsuarioComum(int id, string nome, string email)
     {
         var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
-        string senhaCriptografada = Criptografia.CriptografarMD5Senha(senha);
         bool foiEditado = false;
-
         try
         {
             conexao.Open();
             var comando = conexao.CreateCommand();
             comando.CommandText = @"
-                  UPDATE Usuario SET nome = @nome, senha = @senha
+                  UPDATE Usuario SET nome = @nome, email = @email
                   WHERE id = @id";
             comando.Parameters.AddWithValue("@id", id);
             comando.Parameters.AddWithValue("@nome", nome);
-            comando.Parameters.AddWithValue("@senha", senhaCriptografada);
+            comando.Parameters.AddWithValue("@email", email);
             var leitura = comando.ExecuteReader();
             foiEditado = true;
-
-
-
-
         }
         catch (Exception ex)
         {
@@ -124,26 +118,23 @@ public class ConsultasUsuario
                 conexao.Close();
             }
         }
-
         return foiEditado;
     }
-    public static bool EditaPerfilUsuarioContribuidor(int id, string cpf, string nome, string senha, string telefone)
+    public static bool EditarPerfilUsuarioContribuidor(int id, string cpf, string nome, string email, string telefone)
     {
         var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
-        string senhaCriptografada = Criptografia.CriptografarMD5Senha(senha);
         bool foiEditado = false;
-
         try
         {
             conexao.Open();
             var comando = conexao.CreateCommand();
             comando.CommandText = @"
-                  UPDATE Usuario SET nome = @nome, cpf = @cpf, senha = @senha, telefone = @telefone
+                  UPDATE Usuario SET nome = @nome, cpf = @cpf, email = @email, telefone = @telefone
                   WHERE id = @id";
             comando.Parameters.AddWithValue("@id", id);
             comando.Parameters.AddWithValue("@cpf", cpf);
             comando.Parameters.AddWithValue("@nome", nome);
-            comando.Parameters.AddWithValue("@senha", senhaCriptografada);
+            comando.Parameters.AddWithValue("@email", email);
             comando.Parameters.AddWithValue("@telefone", telefone);
             var leitura = comando.ExecuteReader();
             foiEditado = true;
@@ -159,7 +150,6 @@ public class ConsultasUsuario
                 conexao.Close();
             }
         }
-
         return foiEditado;
     }
     public static bool ExcluirUsuario(int id)
@@ -190,7 +180,7 @@ public class ConsultasUsuario
         }
         return foiExcluido;
     }
-    public static bool TornarContribuinte(int id, string cpf, int idade, string telefone, string cursoDeGraduacao, string instituicaoEnsinoSuperior, string fotoDiploma = "")
+    public static bool TornarContribuinte(int id, string cpf, int idade, string telefone, string cursoDeGraduacao, string instituicaoEnsinoSuperior)
     {
         var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
         Usuario usuario = new Usuario();
@@ -201,7 +191,7 @@ public class ConsultasUsuario
             conexao.Open();
             var comando = conexao.CreateCommand();
             comando.CommandText = @"
-                  UPDATE Usuario SET cpf = @cpf, idade = @idade, telefone = @telefone, cursoDeGraduacao = @cursoDeGraduacao, instituicaoEnsinoSuperior = @instituicaoEnsinoSuperior, tipoUsuario = @tipoUsuario, fotoDiploma = @fotoDiploma
+                  UPDATE Usuario SET cpf = @cpf, idade = @idade, telefone = @telefone, cursoDeGraduacao = @cursoDeGraduacao, instituicaoEnsinoSuperior = @instituicaoEnsinoSuperior, tipoUsuario = @tipoUsuario
                   WHERE id = @id";
             comando.Parameters.AddWithValue("@id", id);
             comando.Parameters.AddWithValue("@cpf", cpf);
@@ -210,7 +200,6 @@ public class ConsultasUsuario
             comando.Parameters.AddWithValue("@cursoDeGraduacao", cursoDeGraduacao);
             comando.Parameters.AddWithValue("@instituicaoEnsinoSuperior", instituicaoEnsinoSuperior);
             comando.Parameters.AddWithValue("@tipoUsuario", "contribuinte");
-            comando.Parameters.AddWithValue("@fotoDiploma", fotoDiploma);
             var leitura = comando.ExecuteReader();
 
             tornouContribuinte = true;
@@ -267,27 +256,22 @@ public class ConsultasUsuario
 
         return foiInserido;
     }
-    public static bool AlterarSenha(int id, string senha)
+    public static bool AlterarSenha(string email, string senha)
     {
         var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
         string senhaCriptografada = Criptografia.CriptografarMD5Senha(senha);
         bool foiAlterado = false;
-
         try
         {
             conexao.Open();
             var comando = conexao.CreateCommand();
             comando.CommandText = @"
                   UPDATE Usuario SET senha = @senha
-                  WHERE id = @id";
-            comando.Parameters.AddWithValue("@id", id);
+                  WHERE email = @email";
+            comando.Parameters.AddWithValue("@email", email);
             comando.Parameters.AddWithValue("@senha", senhaCriptografada);
             var leitura = comando.ExecuteReader();
             foiAlterado = true;
-
-
-
-
         }
         catch (Exception ex)
         {
@@ -302,5 +286,43 @@ public class ConsultasUsuario
         }
 
         return foiAlterado;
+    }
+    public static bool VerificaExistenciaEmail(string email)
+    {
+        var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
+        Usuario usuario = null;
+        try
+        {
+            conexao.Open();
+            var comando = conexao.CreateCommand();
+            comando.CommandText = @"
+                  SELECT email from Usuario WHERE email = @email";
+            comando.Parameters.AddWithValue("@email", email);
+            var leitura = comando.ExecuteReader();
+            while (leitura.Read())
+            {
+                usuario = new Usuario();
+                usuario.email = leitura.GetString("email");
+            }
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+        finally
+        {
+            if (conexao.State == System.Data.ConnectionState.Open)
+            {
+                conexao.Close();
+            }
+        }
+        if(usuario != null)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }

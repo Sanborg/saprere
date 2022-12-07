@@ -10,11 +10,11 @@
         WindowStartupLocation="CenterScreen">
     <Grid>
         <Image x:Name="imgFundoLogin" Margin="-28,-20,-26,-21" Stretch="Fill" Source="/Resources/imgFundoLogin.png"/>
-        <TextBox x:Name="boxEmail" HorizontalAlignment="Left" Margin="140,355,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="265" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24" TextDecorations="{x:Null}" FontWeight="Bold"/>
+        <TextBox x:Name="boxEmail" Margin="20,0,0,160" TextWrapping="Wrap" Text="Email" VerticalAlignment="Center" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24" TextDecorations="{x:Null}" FontWeight="Bold" HorizontalAlignment="Center" Width="265"/>
         <TextBlock x:Name="btnLogin" HorizontalAlignment="Left" Margin="153,520,0,0" TextWrapping="Wrap" Text="LOGIN" VerticalAlignment="Top" Height="55" Width="206" FontFamily="Lucida Sans" FontSize="24" FontWeight="Bold" TextAlignment="Center" Padding="0,15,0,0" MouseLeftButtonDown="RealizarLogin"/>
         <TextBlock x:Name="btnEsqueceuSenha" HorizontalAlignment="Left" Margin="153,602,0,0" TextWrapping="Wrap" Text="Esqueceu a senha?" VerticalAlignment="Top" Height="31" Width="206" FontFamily="Lucida Sans" FontSize="16" FontWeight="Bold" TextAlignment="Center" MouseLeftButtonDown="PressionarEsqueceuSenha"/>
         <TextBlock x:Name="btnCriarConta" HorizontalAlignment="Left" Margin="168,714,0,0" TextWrapping="Wrap" Text="CRIAR CONTA" VerticalAlignment="Top" Height="62" Width="179" FontFamily="Lucida Sans" FontSize="22" FontWeight="Bold" TextAlignment="Center" Padding="0,16,0,0" MouseLeftButtonDown="CriarConta"/>
-        <PasswordBox x:Name="boxSenha" HorizontalAlignment="Left" Margin="138,450,0,0" VerticalAlignment="Top" Width="265" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24"/>
+        <PasswordBox x:Name="boxSenha" Margin="138,450,120,0" VerticalAlignment="Top" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" FontSize="24"/>
         <TextBlock x:Name="txtBoasVindas" HorizontalAlignment="Left" Margin="144,275,0,0" TextWrapping="Wrap" Text="Bem-vindo ao Sapere!" VerticalAlignment="Top" Height="31" Width="206" FontFamily="Lucida Sans" FontSize="18" FontWeight="Bold" TextAlignment="Center" MouseLeftButtonDown="PressionarEsqueceuSenha"/>
 
     </Grid>

@@ -31,5 +31,43 @@ namespace sapere.View
             InitializeComponent();
             this.usuario = usuario;
         }
+        private void PressionarBtnReportarEvento(object sender, MouseButtonEventArgs e)
+        {
+            frmReportagemDeEvento frmReportagemDeEvento = new frmReportagemDeEvento(usuario);
+            frmReportagemDeEvento.Show();
+            Close();
+        }
+
+        private void PressionarBtnMenu(object sender, MouseButtonEventArgs e)
+        {
+            frmMenu frmMenu = new frmMenu(usuario);
+            frmMenu.Show();
+            Close();
+        }
+
+        private void PressionarBtnPesquisarEvento(object sender, MouseButtonEventArgs e)
+        {
+            frmPesquisaDeEvento frmPesquisaDeEvento = new frmPesquisaDeEvento(usuario);
+            frmPesquisaDeEvento.Show();
+            Close();
+        }
+
+        private void PressionarBtnPerfil(object sender, MouseButtonEventArgs e)
+        {
+            frmPerfil frmPerfil = new frmPerfil(usuario);
+            frmPerfil.Show();
+            Close();
+        }
+
+        private void PressionarBtnConfiguracoes(object sender, MouseButtonEventArgs e)
+        {
+            frmConfiguracoes frmConfiguracoes = new frmConfiguracoes(usuario);
+            frmConfiguracoes.Show();
+            Close();
+        }
+        public void CumprimentarUsuario()
+        {
+            txtCumprimento.Text = $"Olá, {usuario.nome}!";
+        }
     }
 }

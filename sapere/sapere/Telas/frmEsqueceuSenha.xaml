@@ -22,8 +22,8 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBlock x:Name="btnEnviarEmail" HorizontalAlignment="Center" Margin="0,536,0,0" TextWrapping="Wrap" Text="ENVIAR EMAIL" VerticalAlignment="Top" Height="51" Width="206" FontFamily="Lucida Sans" FontSize="24" FontWeight="Bold" TextAlignment="Center" Padding="0,10,0,0"/>
-        <TextBlock x:Name="btnVoltar" HorizontalAlignment="Left" Margin="25,799,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="79" Width="90"/>
+        <TextBlock x:Name="btnEnviarEmail" HorizontalAlignment="Center" Margin="0,536,0,0" TextWrapping="Wrap" Text="ENVIAR EMAIL" VerticalAlignment="Top" Height="51" Width="206" FontFamily="Lucida Sans" FontSize="24" FontWeight="Bold" TextAlignment="Center" Padding="0,10,0,0" MouseLeftButtonDown="PressionarBtnEnviarEmail"/>
+        <TextBlock x:Name="btnVoltar" HorizontalAlignment="Left" Margin="25,799,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="79" Width="90" MouseLeftButtonDown="PressionarBtnVoltar"/>
 
     </Grid>
 </Window>

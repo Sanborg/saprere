@@ -19,9 +19,15 @@ namespace sapere.View
     /// </summary>
     public partial class frmPerfil : Window
     {
+        public Usuario usuario { get; }
         public frmPerfil()
         {
             InitializeComponent();
+        }
+        public frmPerfil(Usuario usuario)
+        {
+            InitializeComponent();
+            this.usuario = usuario;
         }
     }
 }

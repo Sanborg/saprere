@@ -12,9 +12,6 @@ public class Evento
     public string titulo { get; set; }
     public string descricao { get; set; }
     public string escopoDoEvento { get; set; }
-    public string imagem { get; set; }
-    public string video { get; set; }
-    public string audio { get; set; }
     public string localDeVisualizacao { get; set; }
     public DateTime dataHoraVisualizacao { get; set; }
     public string link1 { get; set; }
