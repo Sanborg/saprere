@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 public class cEvento
 {
-    public static bool CriarEvento(string idUsuarioCriador, string titulo, string descricao, string escopoDoEvento, string localDeVisualizacao, DateTime dataHoraVisualizacao)
+    public static bool CriarEvento(int idUsuarioCriador, string titulo, string descricao, string escopoDoEvento, string localDeVisualizacao, DateTime dataHoraVisualizacao)
     {
         return ConsultasEvento.CriarEvento(idUsuarioCriador, titulo, descricao, escopoDoEvento, localDeVisualizacao, dataHoraVisualizacao);
     }

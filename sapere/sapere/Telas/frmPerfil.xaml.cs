@@ -29,5 +29,9 @@ namespace sapere.View
             InitializeComponent();
             this.usuario = usuario;
         }
+        public void InserirNome()
+        {
+            txtNomeUsuario.Text = usuario.nome;
+        }
     }
 }

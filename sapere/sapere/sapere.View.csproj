@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Icones\figura-verificado.png" />
     <None Remove="Imagens de fundo\imgFundoMenu.png" />
     <None Remove="Imagens de fundo\imgFundoPerfil.png" />
     <None Remove="Resources\imgCartaoEvento.png" />
@@ -31,6 +32,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Icones\figura-verificado.png" />
     <Resource Include="Resources\imgFundoInsercaoCodigo.png" />
   </ItemGroup>
 
@@ -69,6 +71,7 @@
 
   <ItemGroup>
     <Folder Include="Imagens\" />
+    <Folder Include="Audios\" />
   </ItemGroup>
 
   <ItemGroup>

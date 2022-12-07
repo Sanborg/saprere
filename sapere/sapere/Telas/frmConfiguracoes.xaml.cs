@@ -29,5 +29,31 @@ namespace sapere.View
             InitializeComponent();
             this.usuario = usuario;
         }
+
+        private void PressionarBtnTrocarUsuario(object sender, MouseButtonEventArgs e)
+        {
+            frmLogin frmLogin = new frmLogin();
+            frmLogin.Show();
+            Close();
+        }
+
+        private void PressionarBtnAlterarSenha(object sender, MouseButtonEventArgs e)
+        {
+            frmAlteracaoDeSenha frmAlteracaoDeSenha = new frmAlteracaoDeSenha(usuario.email);
+            frmAlteracaoDeSenha.Show();
+            Close();
+        }
+
+        private void PressionarBtnExcluirConta(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void PressionarTornarContribuinte(object sender, MouseButtonEventArgs e)
+        {
+            frmCadastroUsuarioContribuinte frmCadastroUsuarioContribuinte = new frmCadastroUsuarioContribuinte(usuario);
+            frmCadastroUsuarioContribuinte.Show();
+            Close();
+        }
     }
 }

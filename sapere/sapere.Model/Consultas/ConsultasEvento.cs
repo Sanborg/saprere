@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,7 +8,7 @@ using MySqlConnector;
 
 public class ConsultasEvento
 {
-    public static bool CriarEvento(string idUsuarioCriador, string titulo, string descricao, string escopoDoEvento, string localDeVisualizacao, DateTime dataHoraVisualizacao)
+    public static bool CriarEvento(int idUsuarioCriador, string titulo, string descricao, string escopoDoEvento, string localDeVisualizacao, DateTime dataHoraVisualizacao)
     {
         var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
         Usuario usuario = new Usuario();
@@ -27,11 +28,7 @@ public class ConsultasEvento
             comando.Parameters.AddWithValue("@localDeVisualizacao", localDeVisualizacao);
             comando.Parameters.AddWithValue("@dataHoraVisualizacao", dataHoraVisualizacao);
             var leitura = comando.ExecuteReader();
-
             foiCriado = true;
-
-
-
         }
         catch (Exception ex)
         {

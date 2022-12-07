@@ -8,7 +8,7 @@ CREATE TABLE Usuario(
 id int AUTO_INCREMENT,
 cpf varchar(11) UNIQUE,
 nome varchar(100),
-email varchar(100),
+email varchar(100) UNIQUE,
 senha varchar(100),
 tipoUsuario varchar(100),
 idade int,
