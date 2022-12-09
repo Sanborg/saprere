@@ -33,7 +33,9 @@
     <None Remove="Resources\imgFundoVisualizacaoEventoNaoRespondido.png" />
     <None Remove="Resources\imgFundoVisualizacaoEventoRespondido1.png" />
     <None Remove="Resources\imgFundoVisualizacaoEventoRespondido2.png" />
+    <None Remove="Telas\Branco.png" />
     <None Remove="Telas\imgFundoLogin.png" />
+    <None Remove="Telas\lixeira.png" />
     <None Remove="Telas\verde.png" />
   </ItemGroup>
 
@@ -84,6 +86,8 @@
     <Resource Include="Resources\imgFundoVisualizacaoEventoNaoRespondido.png" />
     <Resource Include="Resources\imgFundoVisualizacaoEventoRespondido1.png" />
     <Resource Include="Resources\imgFundoVisualizacaoEventoRespondido2.png" />
+    <Resource Include="Telas\Branco.png" />
+    <Resource Include="Telas\lixeira.png" />
     <Resource Include="Telas\verde.png" />
   </ItemGroup>
 
