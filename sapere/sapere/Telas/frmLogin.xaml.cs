@@ -19,9 +19,15 @@ namespace sapere.View
     /// </summary>
     public partial class frmLogin : Window
     {
+        public Evento evento { get; }
         public frmLogin()
         {
             InitializeComponent();
+        }
+        public frmLogin(Evento evento)
+        {
+            InitializeComponent();
+            this.evento = evento;
         }
         private void CriarConta(object sender, MouseButtonEventArgs e)
         {
@@ -88,7 +94,7 @@ namespace sapere.View
                     Usuario usuario = cUsuario.BuscarDadosUsuario(email, senha);
                     if (usuario != null)
                     {
-                        frmMenu frmMenu = new frmMenu(usuario);
+                        frmMenu frmMenu = new frmMenu(usuario, evento, false);
                         frmMenu.Show();
                         Close();
                     }
@@ -125,7 +131,7 @@ namespace sapere.View
         }
         private void PressionarEsqueceuSenha(object sender, MouseButtonEventArgs e)
         {
-            frmEsqueceuSenha frmEsqueceuSenha = new frmEsqueceuSenha();
+            frmEsqueceuSenha frmEsqueceuSenha = new frmEsqueceuSenha(evento);
             frmEsqueceuSenha.Show();
             Close();
         }

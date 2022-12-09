@@ -92,9 +92,9 @@ namespace sapere.View
                         if (arroba == true && ponto == true)
                         {
                             bool foiInserido = cUsuario.CadastrarUsuario(boxNome.Text, boxEmail.Text, boxSenha.Password);
-                            if (foiInserido == true)
+                            Usuario usuario = cUsuario.BuscarDadosUsuario(boxEmail.Text, boxSenha.Password);
+                            if (foiInserido == true && usuario != null)
                             {
-                                Usuario usuario = cUsuario.BuscarDadosUsuario(boxEmail.Text, boxSenha.Password);
                                 frmOpcaoDeCadastro frmOpcaoDeCadastro = new frmOpcaoDeCadastro(usuario);
                                 frmOpcaoDeCadastro.Show();
                                 Close();

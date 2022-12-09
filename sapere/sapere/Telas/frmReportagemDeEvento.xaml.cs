@@ -1,6 +1,7 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -44,23 +45,9 @@ namespace sapere.View
             comEscopoDoEvento.Items.Add("Fenômeno físico");
             comEscopoDoEvento.Items.Add("Fenômeno químico");
         }
-        public void ReportarEvento(string titulo, string descricao, string escopoDoEvento, string localDeVisualizacao, DateTime dataHoraVisualizacao)
-        {
-            if (VerificaCampos() == true)
-            {
-                string imagem = "https://imgbox.com/2adt1P1s";
-                bool foiReportado = cEvento.CriarEvento(usuario.id, titulo, descricao, escopoDoEvento, localDeVisualizacao, dataHoraVisualizacao);
-                if (foiReportado == true)
-                {
-                    frmMenu frmMenu = new frmMenu(usuario);
-                    frmMenu.Show();
-                    Close();
-                }
-            }
-        }
         private bool VerificaCampos()
         {
-            if (boxTitulo.Text != "" && boxDescricao.Text != "" && boxHora.Text !=  "" && boxData.Text != "")
+            if (boxTitulo.Text != "" && boxDescricao.Text != "" && boxHora.Text != "" && boxData.Text != "")
             {
                 return true;
             }
@@ -75,28 +62,65 @@ namespace sapere.View
                 return false;
             }
         }
-        private void CriarEvento(object sender, MouseButtonEventArgs e)
-        {
-            string dataHoraTexto = boxData.Text + boxHora.Text;
-            DateTime dataHoraDatetime = DateTime.Parse(dataHoraTexto);
-            ReportarEvento(boxTitulo.Text, boxDescricao.Text, comEscopoDoEvento.SelectedItem.ToString(), boxLocalDeVisualizacao.Text, dataHoraDatetime);
-        }
         private void VerificaAnexos()
         {
-            if(pressionouAnexarImagem == true)
+            if (pressionouAnexarImagem == true)
             {
                 imgFotoEnviada.Visibility = Visibility.Visible;
-                imgFotoEnviada.IsHitTestVisible = false;
+                btnAdicionarFoto.IsHitTestVisible = false;
             }
-            if(pressionouAnexarVideo == true)
+            if (pressionouAnexarVideo == true)
             {
                 imgVideoEnviado.Visibility = Visibility.Visible;
-                imgVideoEnviado.IsHitTestVisible = false;
+                btnAdicionarVideo.IsHitTestVisible = false;
             }
-            if(pressionouAnexarAudio == true)
+            if (pressionouAnexarAudio == true)
             {
                 imgAudioEnviado.Visibility = Visibility.Visible;
-                imgAudioEnviado.IsHitTestVisible = false;
+                btnAdicionarAudio.IsHitTestVisible = false;
+            }
+        }
+        public void ReportarEvento(string titulo, string descricao, string escopoDoEvento, string localDeVisualizacao, DateTime dataHoraVisualizacao)
+        {
+            bool foiReportado = cEvento.CriarEvento(usuario.id, titulo, descricao, escopoDoEvento, localDeVisualizacao, dataHoraVisualizacao);
+            if (foiReportado == true)
+            {
+                Evento evento = cEvento.BuscarEvento(titulo);
+                frmMenu frmMenu = new frmMenu(usuario, evento, false);
+                frmMenu.Show();
+                Close();
+            }
+            else
+            {
+                MessageBoxResult result = MessageBox.Show(
+                "Não foi possível reportar o evento. Tente novamente mais tarde.",
+                "Erro",
+                MessageBoxButton.OK,
+                MessageBoxImage.Error
+                );
+            }
+        }
+        private void CriarEvento(object sender, MouseButtonEventArgs e)
+        {
+            if (VerificaCampos() == true)
+            {
+                if (DateTime.TryParse(boxData.Text, out var dataVisualizacao) && DateTime.TryParse(boxHora.Text, out var horarioVisualizacao))
+                {
+                    string dataHoraTexto = $"{boxData.Text} {boxHora.Text}";
+                    DateTime dataHoraDatetime = DateTime.ParseExact(dataHoraTexto, "G", CultureInfo.CreateSpecificCulture("pt-BR"));
+                    ReportarEvento(boxTitulo.Text, boxDescricao.Text, comEscopoDoEvento.SelectedItem.ToString(), boxLocalDeVisualizacao.Text, dataHoraDatetime);
+                }
+                else
+                {
+                    MessageBoxResult result = MessageBox.Show(
+                    "Campo Data ou Hora não preenchido corretamente." +
+                    " O campo data não deve conter espaços, com dia, mês e ano separados por '/'." +
+                    " O campo hora não deve conter espaços, com hora, minuto e segundo separado por ':'.",
+                    "Erro",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error
+                    );
+                }
             }
         }
         private void SimularAnexarImagem(object sender, MouseButtonEventArgs e)
@@ -144,7 +168,7 @@ namespace sapere.View
         }
         private void PressionarBtnVoltar(object sender, MouseButtonEventArgs e)
         {
-            frmMenu frmMenu = new frmMenu(usuario);
+            frmMenu frmMenu = new frmMenu(usuario, null, false);
             frmMenu.Show();
             Close();
         }

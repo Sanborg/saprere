@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\rafas\Source\Repos\Sanborg\saprere\sapere\sapere\obj\Release\net6.0-windows\
+C:\Users\rafas\source\repos\Sanborg\saprere\sapere\sapere\obj\Release\net6.0-windows\
 sapere.View
 none
 false
 TRACE;RELEASE;NET;NET6_0;NETCOREAPP
-C:\Users\rafas\Source\Repos\Sanborg\saprere\sapere\sapere\App.xaml
+C:\Users\rafas\source\repos\Sanborg\saprere\sapere\sapere\App.xaml
 16-229511763
 
 19293388453
-196969431961
+197-1371824756
 Telas\frmAlteracaoDeSenha.xaml;Telas\frmCadastroUsuarioComum.xaml;Telas\frmCadastroUsuarioContribuinte.xaml;Telas\frmConfiguracoes.xaml;Telas\frmEsqueceuSenha.xaml;Telas\frmInsercaoCodigo.xaml;Telas\frmLogin.xaml;Telas\frmMenu.xaml;Telas\frmOpcaoDeCadastro.xaml;Telas\frmPerfil.xaml;Telas\frmPesquisaDeEvento.xaml;Telas\frmReportagemDeEvento.xaml;Telas\frmRespostaDeEvento.xaml;Telas\frmVisualizacaoEventoNaoRespondido.xaml;Telas\frmVisualizacaoEventoRespondidoParte1.xaml;Telas\frmVisualizacaoEventoRespondidoParte2.xaml;
 
 True

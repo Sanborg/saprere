@@ -8,10 +8,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Icones\figura-animal.png" />
     <None Remove="Icones\figura-verificado.png" />
     <None Remove="Imagens de fundo\imgFundoMenu.png" />
     <None Remove="Imagens de fundo\imgFundoPerfil.png" />
+    <None Remove="Resources\audQuati.mp3" />
+    <None Remove="Resources\audQuati.wav" />
     <None Remove="Resources\imgCartaoEvento.png" />
+    <None Remove="Resources\imgCartãoNaoRespondido.png" />
+    <None Remove="Resources\imgCartãoRespondido.png" />
     <None Remove="Resources\imgFundoAlteracaoDeSenha.png" />
     <None Remove="Resources\imgFundoCadastroUsuarioComum.png" />
     <None Remove="Resources\imgFundoCadastroUsuarioContribuinte.png" />
@@ -32,7 +37,19 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Resources\audQuati.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icones\figura-animal.png" />
+    <Resource Include="Evento\audQuati.mp3" />
+    <Resource Include="Resources\imgCartãoRespondido.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Evento\imgFotoQuati.png" />
     <Resource Include="Icones\figura-verificado.png" />
+    <Resource Include="Resources\imgCartãoNaoRespondido.png" />
     <Resource Include="Resources\imgFundoInsercaoCodigo.png" />
   </ItemGroup>
 
@@ -43,7 +60,6 @@
   <ItemGroup>
     <Resource Include="Imagens de fundo\imgFundoMenu.png" />
     <Resource Include="Imagens de fundo\imgFundoPerfil.png" />
-    <Resource Include="Resources\imgCartaoEvento.png" />
     <Resource Include="Resources\imgFundoAlteracaoDeSenha.png" />
     <Resource Include="Resources\imgFundoCadastroUsuarioComum.png" />
     <Resource Include="Resources\imgFundoCadastroUsuarioContribuinte.png" />

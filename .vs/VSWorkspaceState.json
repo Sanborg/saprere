@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\sapere",
+    "\\sapere\\sapere",
+    "\\sapere\\sapere\\Telas"
   ],
-  "SelectedNode": "\\sapere.sln",
+  "SelectedNode": "\\sapere\\sapere\\Telas\\frmReportagemDeEvento.xaml.cs",
   "PreviewInSolutionExplorer": false
 }

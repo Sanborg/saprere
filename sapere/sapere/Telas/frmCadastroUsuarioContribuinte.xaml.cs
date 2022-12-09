@@ -53,7 +53,7 @@ namespace sapere.View
                 bool tornouContribuinte = cUsuario.TornarContribuinte(usuario.id, boxCpf.Text, int.Parse(boxIdade.Text), boxTelefone.Text, boxCursoDeGraduacao.Text, boxInstituicaoEnsinoSuperior.Text);
                 if (tornouContribuinte == true)
                 {
-                    frmMenu frmMenu = new frmMenu(usuario);
+                    frmMenu frmMenu = new frmMenu(usuario, null, false);
                     frmMenu.Show();
                     Close();
                 }

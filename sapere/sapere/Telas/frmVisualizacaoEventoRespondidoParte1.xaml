@@ -10,18 +10,40 @@
         WindowStartupLocation="CenterScreen">
     <Grid>
         <Image x:Name="imgFundoVisualizacaoEventoRespondido1" Margin="-26,-21,-41,-40" Source="/Resources/imgFundoVisualizacaoEventoRespondido1.png" Stretch="Fill"/>
-        <TextBlock x:Name="btnReportarEvento" HorizontalAlignment="Left" Margin="210,808,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="96" Width="106" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" Foreground="#FF6D6D6D"/>
-        <TextBlock x:Name="btnPerfil" HorizontalAlignment="Left" Margin="321,826,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="78" Width="95" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" Foreground="#FF6D6D6D"/>
-        <TextBlock x:Name="btnConfiguracoes" HorizontalAlignment="Left" Margin="416,826,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="78" Width="92" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" Foreground="#FF6D6D6D"/>
-        <TextBlock x:Name="btnPesquisarEvento" HorizontalAlignment="Left" Margin="120,826,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="78" Width="90" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" Foreground="#FF6D6D6D"/>
-        <TextBlock x:Name="btnMenu" HorizontalAlignment="Left" Margin="20,826,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="78" Width="90" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" Foreground="#FF6D6D6D"/>
-        <TextBlock x:Name="txtEventoRespondido" HorizontalAlignment="Left" Margin="10,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="80" Width="468" FontFamily="Lucida Sans" FontSize="36" FontWeight="Bold" TextAlignment="Center" Padding="0,15,110,0" Text="Evento Respondido"/>
-        <TextBlock x:Name="txtTitulo" HorizontalAlignment="Left" Margin="46,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="44" Width="390" FontFamily="Lucida Sans" FontSize="24" FontWeight="Bold" TextAlignment="Center" Padding="0,7,300,0" Text=""/>
-        <TextBlock x:Name="btnPlayAudio" HorizontalAlignment="Left" Margin="295,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="66" Width="67" FontFamily="Lucida Sans" FontSize="24" FontWeight="Bold" TextAlignment="Center" Padding="0,7,300,0"/>
-        <TextBlock x:Name="btnPlayVideo" HorizontalAlignment="Left" Margin="128,560,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="66" Width="67" FontFamily="Lucida Sans" FontSize="24" FontWeight="Bold" TextAlignment="Center" Padding="0,7,300,0"/>
-        <Image x:Name="imgFotoEvento" HorizontalAlignment="Left" Height="100" Margin="67,248,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBlock x:Name="btnReportarEvento" HorizontalAlignment="Left" Margin="210,808,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="96" Width="106" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" Foreground="#FF6D6D6D" MouseLeftButtonDown="PressionarBtnReportarEvento"/>
+        <TextBlock x:Name="btnPerfil" HorizontalAlignment="Left" Margin="321,826,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="78" Width="95" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" Foreground="#FF6D6D6D" MouseLeftButtonDown="PressionarBtnPerfil"/>
+        <TextBlock x:Name="btnConfiguracoes" HorizontalAlignment="Left" Margin="416,826,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="78" Width="92" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" Foreground="#FF6D6D6D" MouseLeftButtonDown="PressionarBtnConfiguracoes"/>
+        <TextBlock x:Name="btnPesquisarEvento" HorizontalAlignment="Left" Margin="120,826,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="78" Width="90" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" Foreground="#FF6D6D6D" MouseLeftButtonDown="PressionarBtnPesquisarEvento"/>
+        <TextBlock x:Name="btnMenu" HorizontalAlignment="Left" Margin="20,826,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="78" Width="90" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" Foreground="#FF6D6D6D" MouseLeftButtonDown="PressionarBtnTelaInicial"/>
+        <TextBlock x:Name="txtEventoNaoRespondido" HorizontalAlignment="Left" Margin="10,45,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="80" Width="553" FontFamily="Lucida Sans" FontSize="36" FontWeight="Bold" TextAlignment="Center" Padding="0,15,110,0" Text="Evento Não Respondido"/>
         <TextBlock x:Name="txtDescricaoEvento" HorizontalAlignment="Left" Margin="37,388,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="111" Width="452" FontFamily="Lucida Sans" FontWeight="Bold" TextAlignment="Center" Padding="0,0,380,0"/>
-        <TextBlock x:Name="txtDescricaoEvento_Copy" HorizontalAlignment="Left" Margin="279,554,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="115" Width="173" FontFamily="Lucida Sans" FontWeight="Bold" TextAlignment="Center" Padding="0,0,380,0"/>
+        <TextBlock x:Name="txtLocalizacaoEData" HorizontalAlignment="Left" Margin="318,554,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="115" Width="134" FontFamily="Lucida Sans" FontWeight="Bold" TextAlignment="Center" Padding="0,0,380,0"/>
+        <TextBlock x:Name="btnVoltar" HorizontalAlignment="Left" Margin="63,707,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" Width="87" FontFamily="Lucida Sans" FontSize="35" FontWeight="Bold" TextAlignment="Center" Padding="0,18,0,0" MouseLeftButtonDown="PressionarBtnVoltar"/>
+        <TextBlock x:Name="txtTituloEventoNaoRespondido" HorizontalAlignment="Left" Margin="30,156,0,0" Visibility="Visible" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="337" FontFamily="Lucida Sans" FontWeight="Bold" TextAlignment="Center" Padding="0,10,0,0" FontSize="22" Text=""/>
+        <Image x:Name="imgEscopoDoEvento" Margin="367,157,112,709" Source="/Icones/figura-animal.png" Stretch="Fill"/>
+        <Image x:Name="imgFotoEvento" Margin="29,212,314,512" Source="/Evento/imgFotoQuati.png" Stretch="Fill" Width="180" Height="180" Visibility="Hidden"/>
+        <MediaElement x:Name="vidEvento" HorizontalAlignment="Left" Height="177" Margin="19,512,0,0" VerticalAlignment="Top" Width="294" AllowDrop="True" Source="/Evento/vidQuati.mp4" IsMuted="True" UnloadedBehavior="Stop" LoadedBehavior="Play" Visibility="Hidden"/>
+        <MediaElement x:Name="audEvento" HorizontalAlignment="Left" Height="116" Margin="244,230,0,0" VerticalAlignment="Top" Width="172" AllowDrop="True" Source="/Resources/audQuati.wav" IsMuted="True" UnloadedBehavior="Manual"/>
+        <Image x:Name="imgFundoBtnPlayPauseAudio" HorizontalAlignment="Left" Height="60" Margin="299,256,0,0" VerticalAlignment="Top" Width="60" Source="/Icones/figura-fundo-btn-play.png" MouseLeftButtonDown="PressionarBtnPlay">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/Icones/figura-fundo-btn-play.png"/>
+            </Image.OpacityMask>
+        </Image>
+        <Image x:Name="imgPlayPauseAudio" HorizontalAlignment="Left" Height="60" Margin="299,256,0,0" VerticalAlignment="Top" Width="60" Source="/Icones/figurap-play-pausa.png" MouseLeftButtonDown="PressionarBtnPlayPauseAudio">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/Icones/figurap-play-pausa.png"/>
+            </Image.OpacityMask>
+        </Image>
+        <Image x:Name="imgFundoBtnPlayPauseVideo" HorizontalAlignment="Left" Height="30" Margin="19,647,0,0" VerticalAlignment="Top" Width="30" Source="/Icones/figura-fundo-btn-play.png" MouseLeftButtonDown="PressionarBtnPlay" Visibility="Hidden">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/Icones/figura-fundo-btn-play.png"/>
+            </Image.OpacityMask>
+        </Image>
+        <Image x:Name="imgPlayPauseVideo" HorizontalAlignment="Left" Height="30" Margin="19,647,0,0" VerticalAlignment="Top" Width="30" Source="/Icones/figurap-play-pausa.png" MouseLeftButtonDown="PressionarBtnPlayPauseVideo" Visibility="Hidden">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="/Icones/figurap-play-pausa.png"/>
+            </Image.OpacityMask>
+        </Image>
         <TextBlock x:Name="btnDescer" HorizontalAlignment="Center" Margin="0,716,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="66" Width="67" FontFamily="Lucida Sans" FontSize="24" FontWeight="Bold" TextAlignment="Center" Padding="0,7,300,0"/>
     </Grid>
 </Window>

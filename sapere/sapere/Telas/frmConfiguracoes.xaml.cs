@@ -46,7 +46,7 @@ namespace sapere.View
 
         private void PressionarBtnExcluirConta(object sender, MouseButtonEventArgs e)
         {
-
+            
         }
 
         private void PressionarTornarContribuinte(object sender, MouseButtonEventArgs e)

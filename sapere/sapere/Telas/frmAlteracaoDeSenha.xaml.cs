@@ -19,14 +19,16 @@ namespace sapere.View
     /// </summary>
     public partial class frmAlteracaoDeSenha : Window
     {
+        public Evento evento { get; }
         public string email { get; }
         public frmAlteracaoDeSenha()
         {
             InitializeComponent();
         }
-        public frmAlteracaoDeSenha(string email)
+        public frmAlteracaoDeSenha(Evento evento, string email)
         {
             InitializeComponent();
+            this.evento = evento;
             this.email = email;
         }
         public void AlterarSenha(string senha, string confirmaSenha)
@@ -73,7 +75,7 @@ namespace sapere.View
                             MessageBoxButton.OK,
                             MessageBoxImage.Information
                             );
-                            frmLogin frmLogin = new frmLogin();
+                            frmLogin frmLogin = new frmLogin(evento);
                             frmLogin.Show();
                             Close();
                         }
@@ -85,7 +87,7 @@ namespace sapere.View
                             MessageBoxButton.OK,
                             MessageBoxImage.Error
                             );
-                            frmLogin frmLogin = new frmLogin();
+                            frmLogin frmLogin = new frmLogin(evento);
                             frmLogin.Show();
                             Close();
                         }

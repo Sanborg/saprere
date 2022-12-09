@@ -20,7 +20,6 @@ namespace sapere.View
     public partial class frmOpcaoDeCadastro : Window
     {
         public Usuario usuario { get; }
-
         public frmOpcaoDeCadastro()
         {
             InitializeComponent();
@@ -39,7 +38,7 @@ namespace sapere.View
 
         private void PressionarBotaoNaoTornarContribuinte(object sender, MouseButtonEventArgs e)
         {
-            frmMenu frmMenu = new frmMenu(usuario);
+            frmMenu frmMenu = new frmMenu(usuario, null, false);
             frmMenu.Show();
             Close();
         }

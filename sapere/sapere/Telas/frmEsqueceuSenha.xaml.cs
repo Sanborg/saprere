@@ -20,9 +20,15 @@ namespace sapere.View
     /// </summary>
     public partial class frmEsqueceuSenha : Window
     {
+        public Evento evento { get; }
         public frmEsqueceuSenha()
         {
             InitializeComponent();
+        }
+        public frmEsqueceuSenha(Evento evento)
+        {
+            InitializeComponent();
+            this.evento = evento;
         }
         public void EnviarEmailRecuperacao(string email)
         {
@@ -49,13 +55,13 @@ namespace sapere.View
                         Random random = new Random();
                         int codigo = random.Next(100000, 999999);
                         MailMessage mail = new MailMessage();
-                        mail.From = new MailAddress("sapere@gmail.com");
+                        mail.From = new MailAddress("saperepjt@gmail.com");
                         mail.To.Add(email);
                         mail.Subject = "Recuperação de senha";
                         mail.Body = $"O seu código de recuperação de conta é {codigo}. Insira-o no campo apropriado do aplicativo.";
-                        SmtpClient smpt = new SmtpClient("smpt@gmail.com");
+                        SmtpClient smpt = new SmtpClient("saperepjt@gmail.com");
                         smpt.Send(mail);
-                        frmInsercaoCodigo frmInsercaoCodigo = new frmInsercaoCodigo(email, codigo);
+                        frmInsercaoCodigo frmInsercaoCodigo = new frmInsercaoCodigo(evento, email, codigo);
                         frmInsercaoCodigo.Show();
                         Close();
                     }
