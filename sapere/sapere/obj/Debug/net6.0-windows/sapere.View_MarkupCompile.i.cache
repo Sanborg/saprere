@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Users\Usuario\source\repos\Sanborg\saprere\sapere\sapere\App.xaml
-16-229511763
+17463946654
 
-21-12825371
+221827906174
 19769731287
-Telas\frmAlteracaoDeSenha.xaml;Telas\frmCadastroUsuarioComum.xaml;Telas\frmCadastroUsuarioContribuinte.xaml;Telas\frmConfiguracoes.xaml;Telas\frmEsqueceuSenha.xaml;Telas\frmInsercaoCodigo.xaml;Telas\frmLogin.xaml;Telas\frmMenu.xaml;Telas\frmOpcaoDeCadastro.xaml;Telas\frmPerfil.xaml;Telas\frmPesquisaDeEvento.xaml;Telas\frmReportagemDeEvento.xaml;Telas\frmRespostaDeEvento.xaml;Telas\frmVisualizacaoEventoNaoRespondido.xaml;Telas\frmVisualizacaoEventoRespondidoParte1.xaml;Telas\frmVisualizacaoEventoRespondidoParte2.xaml;
+Telas\frmAlteracaoDeSenha.xaml;Telas\frmCadastroUsuarioComum.xaml;Telas\frmCadastroUsuarioContribuinte.xaml;Telas\frmConfiguracoes.xaml;Telas\frmEditarPerfil.xaml;Telas\frmEsqueceuSenha.xaml;Telas\frmInsercaoCodigo.xaml;Telas\frmLogin.xaml;Telas\frmMenu.xaml;Telas\frmOpcaoDeCadastro.xaml;Telas\frmPerfil.xaml;Telas\frmPesquisaDeEvento.xaml;Telas\frmReportagemDeEvento.xaml;Telas\frmRespostaDeEvento.xaml;Telas\frmVisualizacaoEventoNaoRespondido.xaml;Telas\frmVisualizacaoEventoRespondidoParte1.xaml;Telas\frmVisualizacaoEventoRespondidoParte2.xaml;
 
-False
+True
 
