@@ -1,24 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rafas\\source\\repos\\Sanborg\\saprere\\sapere\\sapere\\sapere.View.csproj": {}
+    "C:\\Users\\Usuario\\source\\repos\\Sanborg\\saprere\\sapere\\sapere\\sapere.View.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rafas\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Controller\\sapere.Controller.csproj": {
+    "C:\\Users\\Usuario\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Controller\\sapere.Controller.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rafas\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Controller\\sapere.Controller.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Controller\\sapere.Controller.csproj",
         "projectName": "sapere.Controller",
-        "projectPath": "C:\\Users\\rafas\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Controller\\sapere.Controller.csproj",
-        "packagesPath": "C:\\Users\\rafas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rafas\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Controller\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Controller\\sapere.Controller.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Controller\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\rafas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows7.0"
+          "net6.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -28,8 +32,8 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\rafas\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Model\\sapere.Model.csproj": {
-                "projectPath": "C:\\Users\\rafas\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Model\\sapere.Model.csproj"
+              "C:\\Users\\Usuario\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Model\\sapere.Model.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Model\\sapere.Model.csproj"
               }
             }
           }
@@ -49,7 +53,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -61,25 +66,29 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\rafas\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Model\\sapere.Model.csproj": {
+    "C:\\Users\\Usuario\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Model\\sapere.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rafas\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Model\\sapere.Model.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Model\\sapere.Model.csproj",
         "projectName": "sapere.Model",
-        "projectPath": "C:\\Users\\rafas\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Model\\sapere.Model.csproj",
-        "packagesPath": "C:\\Users\\rafas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rafas\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Model\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Model\\sapere.Model.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Model\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\rafas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows7.0"
+          "net6.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -112,7 +121,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -124,25 +134,29 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\rafas\\source\\repos\\Sanborg\\saprere\\sapere\\sapere\\sapere.View.csproj": {
+    "C:\\Users\\Usuario\\source\\repos\\Sanborg\\saprere\\sapere\\sapere\\sapere.View.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rafas\\source\\repos\\Sanborg\\saprere\\sapere\\sapere\\sapere.View.csproj",
+        "projectUniqueName": "C:\\Users\\Usuario\\source\\repos\\Sanborg\\saprere\\sapere\\sapere\\sapere.View.csproj",
         "projectName": "sapere.View",
-        "projectPath": "C:\\Users\\rafas\\source\\repos\\Sanborg\\saprere\\sapere\\sapere\\sapere.View.csproj",
-        "packagesPath": "C:\\Users\\rafas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rafas\\source\\repos\\Sanborg\\saprere\\sapere\\sapere\\obj\\",
+        "projectPath": "C:\\Users\\Usuario\\source\\repos\\Sanborg\\saprere\\sapere\\sapere\\sapere.View.csproj",
+        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Usuario\\source\\repos\\Sanborg\\saprere\\sapere\\sapere\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\rafas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net6.0-windows7.0"
+          "net6.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -152,11 +166,11 @@
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Users\\rafas\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Controller\\sapere.Controller.csproj": {
-                "projectPath": "C:\\Users\\rafas\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Controller\\sapere.Controller.csproj"
+              "C:\\Users\\Usuario\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Controller\\sapere.Controller.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Controller\\sapere.Controller.csproj"
               },
-              "C:\\Users\\rafas\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Model\\sapere.Model.csproj": {
-                "projectPath": "C:\\Users\\rafas\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Model\\sapere.Model.csproj"
+              "C:\\Users\\Usuario\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Model\\sapere.Model.csproj": {
+                "projectPath": "C:\\Users\\Usuario\\source\\repos\\Sanborg\\saprere\\sapere\\sapere.Model\\sapere.Model.csproj"
               }
             }
           }
@@ -176,7 +190,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -188,7 +203,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
