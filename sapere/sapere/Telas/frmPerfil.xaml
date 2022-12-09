@@ -20,7 +20,6 @@
         <TextBlock x:Name="btnConfiguracoes" HorizontalAlignment="Left" Margin="416,826,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="78" Width="92" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" Foreground="#FF6D6D6D"/>
         <TextBlock x:Name="btnPesquisarEvento" HorizontalAlignment="Left" Margin="120,826,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="78" Width="90" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" Foreground="#FF6D6D6D"/>
         <TextBlock x:Name="btnMenu" HorizontalAlignment="Left" Margin="20,826,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="78" Width="90" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" Foreground="#FF6D6D6D"/>
-        <TextBlock x:Name="btnEventosReportados" HorizontalAlignment="Left" Margin="157,707,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="75" Width="84" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" Foreground="#FF6D6D6D"/>
-        <TextBlock x:Name="btnRespostas" HorizontalAlignment="Left" Margin="307,705,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="75" Width="84" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" Foreground="#FF6D6D6D"/>
+        <Image HorizontalAlignment="Left" Height="134" Margin="110,665,0,0" VerticalAlignment="Top" Width="336" Source="/Telas/Branco.png" Stretch="Fill"/>
     </Grid>
 </Window>

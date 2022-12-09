@@ -109,7 +109,7 @@ namespace sapere.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/sapere.View;V1.0.0.0;component/telas/frmconfiguracoes.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/sapere.View;component/telas/frmconfiguracoes.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Telas\frmConfiguracoes.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

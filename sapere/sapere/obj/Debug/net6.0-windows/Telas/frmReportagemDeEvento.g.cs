@@ -173,7 +173,7 @@ namespace sapere.View {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/sapere.View;V1.0.0.0;component/telas/frmreportagemdeevento.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/sapere.View;component/telas/frmreportagemdeevento.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Telas\frmReportagemDeEvento.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
