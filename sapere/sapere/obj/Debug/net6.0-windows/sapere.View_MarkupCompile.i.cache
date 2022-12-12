@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Usuario\source\repos\Sanborg\saprere\sapere\sapere\obj\Debug\net6.0-windows\
+C:\Users\rafas\source\repos\Sanborg\saprere\sapere\sapere\obj\Debug\net6.0-windows\
 sapere.View
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Users\Usuario\source\repos\Sanborg\saprere\sapere\sapere\App.xaml
-17463946654
+C:\Users\rafas\source\repos\Sanborg\saprere\sapere\sapere\App.xaml
+17211079626
 
-221827906174
-19769731287
-Telas\frmAlteracaoDeSenha.xaml;Telas\frmCadastroUsuarioComum.xaml;Telas\frmCadastroUsuarioContribuinte.xaml;Telas\frmConfiguracoes.xaml;Telas\frmEditarPerfil.xaml;Telas\frmEsqueceuSenha.xaml;Telas\frmInsercaoCodigo.xaml;Telas\frmLogin.xaml;Telas\frmMenu.xaml;Telas\frmOpcaoDeCadastro.xaml;Telas\frmPerfil.xaml;Telas\frmPesquisaDeEvento.xaml;Telas\frmReportagemDeEvento.xaml;Telas\frmRespostaDeEvento.xaml;Telas\frmVisualizacaoEventoNaoRespondido.xaml;Telas\frmVisualizacaoEventoRespondidoParte1.xaml;Telas\frmVisualizacaoEventoRespondidoParte2.xaml;
+22335926180
+197-623393635
+Telas\frmAlteracaoDeSenha.xaml;Telas\frmCadastroUsuarioComum.xaml;Telas\frmCadastroUsuarioContribuinte.xaml;Telas\frmConfiguracoes.xaml;Telas\frmEdicaoDePerfil.xaml;Telas\frmEsqueceuSenha.xaml;Telas\frmInsercaoCodigo.xaml;Telas\frmLogin.xaml;Telas\frmMenu.xaml;Telas\frmOpcaoDeCadastro.xaml;Telas\frmPerfil.xaml;Telas\frmPesquisaDeEvento.xaml;Telas\frmReportagemDeEvento.xaml;Telas\frmRespostaDeEvento.xaml;Telas\frmVisualizacaoEventoNaoRespondido.xaml;Telas\frmVisualizacaoEventoRespondidoParte1.xaml;Telas\frmVisualizacaoEventoRespondidoParte2.xaml;
 
 True
 

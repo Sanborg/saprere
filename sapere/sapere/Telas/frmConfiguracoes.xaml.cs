@@ -20,38 +20,66 @@ namespace sapere.View
     public partial class frmConfiguracoes : Window
     {
         public Usuario usuario { get; }
+        public Evento evento { get; }
+        public bool respondeuEvento { get; }
         public frmConfiguracoes()
         {
             InitializeComponent();
         }
-        public frmConfiguracoes(Usuario usuario)
+        public frmConfiguracoes(Usuario usuario, Evento evento, bool respondeuEvento)
         {
             InitializeComponent();
             this.usuario = usuario;
+            this.evento = evento;
+            this.respondeuEvento = respondeuEvento;
         }
-
         private void PressionarBtnTrocarUsuario(object sender, MouseButtonEventArgs e)
         {
-            frmLogin frmLogin = new frmLogin();
+            frmLogin frmLogin = new frmLogin(evento, respondeuEvento);
             frmLogin.Show();
             Close();
         }
-
         private void PressionarBtnAlterarSenha(object sender, MouseButtonEventArgs e)
         {
-            frmAlteracaoDeSenha frmAlteracaoDeSenha = new frmAlteracaoDeSenha(usuario.email);
+            frmAlteracaoDeSenha frmAlteracaoDeSenha = new frmAlteracaoDeSenha(evento, usuario.email);
             frmAlteracaoDeSenha.Show();
             Close();
         }
-
         private void PressionarBtnExcluirConta(object sender, MouseButtonEventArgs e)
         {
-            
-        }
+            MessageBoxResult result = MessageBox.Show(
+            "Você deseja realmente deletar sua conta",
+            "Atenção",
+            MessageBoxButton.YesNo,
+            MessageBoxImage.Warning
+            );
+            if(result == MessageBoxResult.Yes)
+            {
+                bool foiExcluido = cUsuario.ExcluirUsuario(usuario.id);
+                if(foiExcluido == true)
+                {
+                    frmLogin frmLogin = new frmLogin();
+                    frmLogin.Show();
+                    Close();
+                }
+                else
+                {
+                    MessageBoxResult result2 = MessageBox.Show(
+                    "Não foi possível deletar sua conta. Tente novamente mais tarde.",
+                    "Erro",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error
+                    );
+                }
+            }
+            else if(result == MessageBoxResult.No)
+            {
 
+            }
+        }
         private void PressionarTornarContribuinte(object sender, MouseButtonEventArgs e)
         {
-            frmCadastroUsuarioContribuinte frmCadastroUsuarioContribuinte = new frmCadastroUsuarioContribuinte(usuario);
+            frmCadastroUsuarioContribuinte frmCadastroUsuarioContribuinte = new frmCadastroUsuarioContribuinte(usuario, evento, respondeuEvento);
             frmCadastroUsuarioContribuinte.Show();
             Close();
         }

@@ -90,7 +90,7 @@ public class ConsultasUsuario
         }
         return usuario;
     }
-    public static bool EditarPerfilUsuarioComum(int id, string nome, string email)
+    public static bool EditarPerfil(int id, string nome, string email)
     {
         var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
         bool foiEditado = false;
@@ -119,39 +119,7 @@ public class ConsultasUsuario
             }
         }
         return foiEditado;
-    }
-    public static bool EditarPerfilUsuarioContribuidor(int id, string cpf, string nome, string email, string telefone)
-    {
-        var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
-        bool foiEditado = false;
-        try
-        {
-            conexao.Open();
-            var comando = conexao.CreateCommand();
-            comando.CommandText = @"
-                  UPDATE Usuario SET nome = @nome, cpf = @cpf, email = @email, telefone = @telefone
-                  WHERE id = @id";
-            comando.Parameters.AddWithValue("@id", id);
-            comando.Parameters.AddWithValue("@cpf", cpf);
-            comando.Parameters.AddWithValue("@nome", nome);
-            comando.Parameters.AddWithValue("@email", email);
-            comando.Parameters.AddWithValue("@telefone", telefone);
-            var leitura = comando.ExecuteReader();
-            foiEditado = true;
-        }
-        catch (Exception ex)
-        {
-            Console.WriteLine(ex.Message);
-        }
-        finally
-        {
-            if (conexao.State == System.Data.ConnectionState.Open)
-            {
-                conexao.Close();
-            }
-        }
-        return foiEditado;
-    }
+    } 
     public static bool ExcluirUsuario(int id)
     {
         var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);

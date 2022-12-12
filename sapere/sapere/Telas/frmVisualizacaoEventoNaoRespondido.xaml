@@ -23,9 +23,9 @@
         <TextBlock x:Name="btnVoltar" HorizontalAlignment="Left" Margin="63,707,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="60" Width="87" FontFamily="Lucida Sans" FontSize="35" FontWeight="Bold" TextAlignment="Center" Padding="0,18,0,0" MouseLeftButtonDown="PressionarBtnVoltar"/>
         <TextBlock x:Name="txtTituloEventoNaoRespondido" HorizontalAlignment="Left" Margin="30,156,0,0" Visibility="Visible" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="337" FontFamily="Lucida Sans" FontWeight="Bold" TextAlignment="Center" Padding="0,10,0,0" FontSize="22" Text=""/>
         <Image x:Name="imgEscopoDoEvento" Margin="367,157,112,709" Source="/Icones/figura-animal.png" Stretch="Fill"/>
-        <Image x:Name="imgFotoEvento" Margin="29,212,314,512" Source="/Evento/imgFotoQuati.png" Stretch="Fill" Width="180" Height="180" Visibility="Hidden"/>
-        <MediaElement x:Name="vidEvento" HorizontalAlignment="Left" Height="177" Margin="19,512,0,0" VerticalAlignment="Top" Width="294" AllowDrop="True" Source="/Evento/vidQuati.mp4" IsMuted="True" UnloadedBehavior="Stop" LoadedBehavior="Play" Visibility="Hidden"/>
-        <MediaElement x:Name="audEvento" HorizontalAlignment="Left" Height="116" Margin="244,230,0,0" VerticalAlignment="Top" Width="172" AllowDrop="True" Source="/Resources/audQuati.wav" IsMuted="True" UnloadedBehavior="Manual"/>
+        <Image x:Name="imgFotoEvento" Margin="29,212,314,512" Source="/Evento/imgFotoQuati.png" Stretch="Fill" Width="180" Height="180" Visibility="Visible"/>
+        <MediaElement x:Name="vidEvento" HorizontalAlignment="Left" Height="177" Margin="19,512,0,0" VerticalAlignment="Top" Width="294" AllowDrop="True" Source="/Evento/vidQuati.mp4" IsMuted="True" UnloadedBehavior="Stop" LoadedBehavior="Play" Visibility="Visible"/>
+        <MediaElement x:Name="audEvento" HorizontalAlignment="Left" Height="116" Margin="244,230,0,0" VerticalAlignment="Top" Width="172" AllowDrop="True" Source="/Resources/audQuati.wav" IsMuted="False" UnloadedBehavior="Manual"/>
         <Image x:Name="imgFundoBtnPlayPauseAudio" HorizontalAlignment="Left" Height="60" Margin="299,256,0,0" VerticalAlignment="Top" Width="60" Source="/Icones/figura-fundo-btn-play.png" MouseLeftButtonDown="PressionarBtnPlay">
             <Image.OpacityMask>
                 <ImageBrush ImageSource="/Icones/figura-fundo-btn-play.png"/>
@@ -36,16 +36,16 @@
                 <ImageBrush ImageSource="/Icones/figurap-play-pausa.png"/>
             </Image.OpacityMask>
         </Image>
-        <Image x:Name="imgFundoBtnPlayPauseVideo" HorizontalAlignment="Left" Height="30" Margin="19,647,0,0" VerticalAlignment="Top" Width="30" Source="/Icones/figura-fundo-btn-play.png" MouseLeftButtonDown="PressionarBtnPlay" Visibility="Hidden">
+        <Image x:Name="imgFundoBtnPlayPauseVideo" HorizontalAlignment="Left" Height="30" Margin="19,647,0,0" VerticalAlignment="Top" Width="30" Source="/Icones/figura-fundo-btn-play.png" MouseLeftButtonDown="PressionarBtnPlay" Visibility="Visible">
             <Image.OpacityMask>
                 <ImageBrush ImageSource="/Icones/figura-fundo-btn-play.png"/>
             </Image.OpacityMask>
         </Image>
-        <Image x:Name="imgPlayPauseVideo" HorizontalAlignment="Left" Height="30" Margin="19,647,0,0" VerticalAlignment="Top" Width="30" Source="/Icones/figurap-play-pausa.png" MouseLeftButtonDown="PressionarBtnPlayPauseVideo" Visibility="Hidden">
+        <Image x:Name="imgPlayPauseVideo" HorizontalAlignment="Left" Height="30" Margin="19,647,0,0" VerticalAlignment="Top" Width="30" Source="/Icones/figurap-play-pausa.png" MouseLeftButtonDown="PressionarBtnPlayPauseVideo" Visibility="Visible">
             <Image.OpacityMask>
                 <ImageBrush ImageSource="/Icones/figurap-play-pausa.png"/>
             </Image.OpacityMask>
         </Image>
-        <Image HorizontalAlignment="Left" Height="71" Margin="182,696,0,0" VerticalAlignment="Top" Width="82" Source="/Icones/figura-lixeira.png"/>
+        <Image x:Name="btnDeletarEvento" HorizontalAlignment="Left" Height="71" Margin="182,696,0,0" VerticalAlignment="Top" Width="82" Source="/Icones/figura-lixeira.png" MouseLeftButtonDown="PressionarBtnDeletarEvento"/>
     </Grid>
 </Window>

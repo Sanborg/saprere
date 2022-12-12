@@ -8,6 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Audios\**" />
+    <Compile Remove="Imagens\**" />
+    <EmbeddedResource Remove="Audios\**" />
+    <EmbeddedResource Remove="Imagens\**" />
+    <None Remove="Audios\**" />
+    <None Remove="Imagens\**" />
+    <Page Remove="Audios\**" />
+    <Page Remove="Imagens\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Icones\figura-animal.png" />
     <None Remove="Icones\figura-verificado.png" />
     <None Remove="Imagens de fundo\imgFundoMenu.png" />
@@ -89,11 +100,6 @@
     <Resource Include="Telas\Branco.png" />
     <Resource Include="Telas\lixeira.png" />
     <Resource Include="Telas\verde.png" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Imagens\" />
-    <Folder Include="Audios\" />
   </ItemGroup>
 
   <ItemGroup>

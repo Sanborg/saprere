@@ -16,7 +16,7 @@
         <TextBlock x:Name="btnConfiguracoes" HorizontalAlignment="Left" Margin="416,826,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="78" Width="92" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" Foreground="#FF6D6D6D"/>
         <TextBlock x:Name="btnPesquisarEvento" HorizontalAlignment="Left" Margin="120,826,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="78" Width="90" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" Foreground="#FF6D6D6D"/>
         <TextBlock x:Name="btnMenu" HorizontalAlignment="Left" Margin="20,826,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="78" Width="90" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" Foreground="#FF6D6D6D"/>
-        <TextBlock x:Name="btnPesquisar" HorizontalAlignment="Left" Margin="16,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="49" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" Foreground="#FF6D6D6D"/>
+        <TextBlock x:Name="btnPesquisar" HorizontalAlignment="Left" Margin="16,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" Width="49" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" Foreground="#FF6D6D6D" MouseLeftButtonDown="PressionarBtnPesquisarEvento"/>
         <TextBox x:Name="boxPesquisarEvento" HorizontalAlignment="Left" Margin="76,176,0,0" TextWrapping="Wrap" Text="Insira o título do evento desejado" VerticalAlignment="Top" Width="412" Height="32" Background="{x:Null}" BorderBrush="{x:Null}" FontFamily="Lucida Sans" TextDecorations="{x:Null}" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" FontSize="14" Padding="0,7,0,0">
             <TextBox.RenderTransform>
                 <TransformGroup>
@@ -27,5 +27,12 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
+        <Image x:Name="imgEventoNaoRespondido" Margin="37,263,34,371" Source="/Resources/imgCartãoNaoRespondido.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Visibility="Hidden" MouseLeftButtonDown="PressionarEventoNaoRespondido"/>
+        <TextBlock x:Name="txtTituloEventoNaoRespondido" HorizontalAlignment="Left" Margin="41,281,0,0" Visibility="Hidden" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="169" FontFamily="Lucida Sans" FontWeight="Bold" TextAlignment="Center" Padding="0,10,0,0" FontSize="10" Text=""/>
+        <TextBlock x:Name="txtDescricaoEventoNaoRespondido" HorizontalAlignment="Left" Margin="300,345,0,0" Visibility="Hidden" TextWrapping="Wrap" VerticalAlignment="Top" Height="92" Width="139" FontFamily="Lucida Sans" FontWeight="Bold" TextAlignment="Left" Padding="0,0,0,0" FontSize="10"/>
+        <Image x:Name="imgEventoRespondido" Margin="37,265,34,369" Source="/Resources/imgCartãoRespondido.png" Stretch="Fill" MouseLeftButtonDown="PressionarEventoRespondido" Visibility="Hidden"/>
+        <TextBlock x:Name="txtTituloEventoRespondido" HorizontalAlignment="Left" Margin="41,283,0,0" Visibility="Hidden" TextWrapping="Wrap" VerticalAlignment="Top" Height="32" Width="169" FontFamily="Lucida Sans" FontWeight="Bold" TextAlignment="Center" Padding="0,0,0,0" FontSize="24"/>
+        <TextBlock x:Name="txtDescricaoEventoRespondido" HorizontalAlignment="Left" Margin="300,347,0,0" Visibility="Hidden" TextWrapping="Wrap" VerticalAlignment="Top" Height="92" Width="139" FontFamily="Lucida Sans" FontWeight="Bold" TextAlignment="Left" Padding="0,0,0,0" FontSize="10"/>
+        <TextBlock x:Name="txtNenhumEventoEncontrado" HorizontalAlignment="Center" Margin="0,414,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="80" Width="460" FontFamily="Lucida Sans" FontSize="14" FontWeight="Bold" TextAlignment="Center" Padding="0,30,0,0" Text="Nenhum evento reportado encontrado." Visibility="Hidden" Foreground="#FF6D6D6D"/>
     </Grid>
 </Window>

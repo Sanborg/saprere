@@ -72,6 +72,16 @@ namespace sapere.View
                 alternarPlayPauseAudio = false;
             }
         }
+        public void ExcluirEvento()
+        {
+            bool foiExcluido = cEvento.ExcluirEvento(evento.id);
+            if (foiExcluido == true)
+            {
+                frmMenu frmMenu = new frmMenu(usuario, null, false);
+                frmMenu.Show();
+                Close();
+            }
+        }
         private void PressionarBtnPlayPauseAudio(object sender, MouseButtonEventArgs e)
         {
             PlayAudio();
@@ -86,47 +96,45 @@ namespace sapere.View
             frmRespostaDeEvento.Show();
             Close();
         }
-
         private void PressionarBtnVoltar(object sender, MouseButtonEventArgs e)
         {
             frmMenu frmMenu = new frmMenu(usuario, evento, false);
             frmMenu.Show();
             Close();
         }
-
         private void PressionarBtnReportarEvento(object sender, MouseButtonEventArgs e)
         {
             frmReportagemDeEvento frmReportagemDeEvento = new frmReportagemDeEvento(usuario);
             frmReportagemDeEvento.Show();
             Close();
         }
-
         private void PressionarBtnTelaInicial(object sender, MouseButtonEventArgs e)
         {
             frmMenu frmMenu = new frmMenu(usuario, evento, false);
             frmMenu.Show();
             Close();
         }
-
         private void PressionarBtnPerfil(object sender, MouseButtonEventArgs e)
         {
-            frmPerfil frmPerfil = new frmPerfil(usuario);
+            frmPerfil frmPerfil = new frmPerfil(usuario, evento);
             frmPerfil.Show();
             Close();
         }
-
         private void PressionarBtnConfiguracoes(object sender, MouseButtonEventArgs e)
         {
-            frmConfiguracoes frmConfiguracoes = new frmConfiguracoes(usuario);
+            frmConfiguracoes frmConfiguracoes = new frmConfiguracoes(usuario, evento);
             frmConfiguracoes.Show();
             Close();
         }
-
         private void PressionarBtnPesquisarEvento(object sender, MouseButtonEventArgs e)
         {
-            frmPesquisaDeEvento frmPesquisaDeEvento = new frmPesquisaDeEvento(usuario);
+            frmPesquisaDeEvento frmPesquisaDeEvento = new frmPesquisaDeEvento(usuario, evento);
             frmPesquisaDeEvento.Show();
             Close();
+        }
+        private void PressionarBtnDeletarEvento(object sender, MouseButtonEventArgs e)
+        {
+            ExcluirEvento();
         }
     }
 }

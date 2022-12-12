@@ -95,7 +95,7 @@ namespace sapere.View
                             Usuario usuario = cUsuario.BuscarDadosUsuario(boxEmail.Text, boxSenha.Password);
                             if (foiInserido == true && usuario != null)
                             {
-                                frmOpcaoDeCadastro frmOpcaoDeCadastro = new frmOpcaoDeCadastro(usuario);
+                                frmOpcaoDeCadastro frmOpcaoDeCadastro = new frmOpcaoDeCadastro(usuario, null, false);
                                 frmOpcaoDeCadastro.Show();
                                 Close();
                             }

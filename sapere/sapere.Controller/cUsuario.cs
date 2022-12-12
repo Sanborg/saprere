@@ -14,14 +14,10 @@ public class cUsuario
     {
         return ConsultasUsuario.BuscarDadosUsuario(email, senha);
     }
-    public static bool EditaPerfilUsuarioComum(int id, string nome, string email)
+    public static bool EditarPerfil(int id, string nome, string email)
     {
-        return ConsultasUsuario.EditarPerfilUsuarioComum(id, nome, email);
-    }
-    public static bool EditaPerfilUsuarioContribuidor(int id, string cpf, string nome, string email, string telefone)
-    {
-        return ConsultasUsuario.EditarPerfilUsuarioContribuidor(id, cpf, nome, email, telefone);
-    }
+        return ConsultasUsuario.EditarPerfil(id, nome, email);
+    } 
     public static bool ExcluirUsuario(int id)
     {
         return ConsultasUsuario.ExcluirUsuario(id);

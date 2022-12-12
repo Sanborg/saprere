@@ -15,27 +15,33 @@ using System.Windows.Shapes;
 namespace sapere.View
 {
     /// <summary>
-    /// Lógica interna para frmCadastroUsuarioContribuinte.xaml
+    /// Lógica interna para frmEdicaoDePerfil.xaml
     /// </summary>
-    public partial class frmCadastroUsuarioContribuinte : Window
+    public partial class frmEdicaoDePerfil : Window
     {
         public Usuario usuario { get; }
         public Evento evento { get; }
         public bool respondeuEvento { get; }
-        public frmCadastroUsuarioContribuinte()
+        bool pressionouAnexarImagem = false;
+        public frmEdicaoDePerfil()
         {
             InitializeComponent();
         }
-        public frmCadastroUsuarioContribuinte(Usuario usuario, Evento evento, bool respondeuEvento)
+        public frmEdicaoDePerfil(Usuario usuario, Evento evento, bool respondeuEvento)
         {
             InitializeComponent();
             this.usuario = usuario;
             this.evento = evento;
             this.respondeuEvento = respondeuEvento;
         }
+        public void AjustarCampos()
+        {
+            boxNome.Text = usuario.nome;
+            boxEmail.Text = usuario.email;
+        }
         private bool VerificaCampos()
         {
-            if (boxIdade.Text != "" && boxCpf.Text != "" && boxTelefone.Text != "" && boxCursoDeGraduacao.Text != "" && boxInstituicaoEnsinoSuperior.Text != "")
+            if (boxNome.Text != "" && boxEmail.Text != "")
             {
                 return true;
             }
@@ -50,27 +56,37 @@ namespace sapere.View
                 return false;
             }
         }
-        private void TornarContribuinte()
+        public void AtualizarPerfil()
         {
             if(VerificaCampos() == true)
             {
-                bool tornouContribuinte = cUsuario.TornarContribuinte(usuario.id, boxCpf.Text, int.Parse(boxIdade.Text), boxTelefone.Text, boxCursoDeGraduacao.Text, boxInstituicaoEnsinoSuperior.Text);
-                if (tornouContribuinte == true)
+                bool foiAtualizado = cUsuario.EditarPerfil(usuario.id, boxNome.Text, boxEmail.Text);
+                if (foiAtualizado == true)
                 {
-                    frmMenu frmMenu = new frmMenu(usuario, evento, respondeuEvento);
-                    frmMenu.Show();
+                    Usuario usuario = cUsuario.BuscarDadosUsuario(boxEmail.Text, boxSenha.Password);
+                    frmPerfil frmPerfil = new frmPerfil();
+                    frmPerfil.Show();
                     Close();
+                }
+                else
+                {
+                    MessageBoxResult result = MessageBox.Show(
+                    "Não foi possível realizar a edição de perfil. Tente novamente mais tarde.",
+                    "Erro",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Error
+                    );
                 }
             }
         }
-        private void PressionarBtnTornarContribuidor(object sender, MouseButtonEventArgs e)
+        private void PressionarBtnAtualizarPerfil(object sender, MouseButtonEventArgs e)
         {
-            TornarContribuinte();
+            AtualizarPerfil();
         }
         private void PressionarBtnVoltar(object sender, MouseButtonEventArgs e)
         {
-            frmOpcaoDeCadastro frmOpcaoDeCadastro = new frmOpcaoDeCadastro(usuario);
-            frmOpcaoDeCadastro.Show();
+            frmPerfil frmPerfil = new frmPerfil(usuario, evento, respondeuEvento);
+            frmPerfil.Show();
             Close();
         }
     }

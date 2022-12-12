@@ -20,16 +20,18 @@ namespace sapere.View
     public partial class frmInsercaoCodigo : Window
     {
         public Evento evento { get; }
+        public bool respondeuEvento { get; }
         public string email { get; }
         public int codigo { get; }
         public frmInsercaoCodigo()
         {
             InitializeComponent();
         }
-        public frmInsercaoCodigo(Evento evento, string email, int codigo)
+        public frmInsercaoCodigo(Evento evento, bool respondeuEvento, string email, int codigo)
         {
             InitializeComponent();
             this.evento = evento;
+            this.respondeuEvento = respondeuEvento;
             this.email = email;
             this.codigo = codigo;
         }
@@ -39,7 +41,7 @@ namespace sapere.View
             {
                 if(codigo == int.Parse(boxCodigoDeRecuperacao.Text))
                 {
-                    frmAlteracaoDeSenha frmAlteracaoDeSenha = new frmAlteracaoDeSenha(evento, email);
+                    frmAlteracaoDeSenha frmAlteracaoDeSenha = new frmAlteracaoDeSenha(evento, respondeuEvento, email);
                     frmAlteracaoDeSenha.Show();
                     Close();
                 }

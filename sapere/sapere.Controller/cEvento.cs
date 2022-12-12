@@ -15,9 +15,9 @@ public class cEvento
     {
         return ConsultasEvento.BuscarEvento(titulo);
     }
-    public static bool ResponderEvento(int id, int idUsuarioRespondente, string resposta, string link1 = "", string link2 = "", string link3 = "")
+    public static bool ResponderEvento(int id, int idUsuarioRespondente, string titulo, string resposta, string link1 = "", string link2 = "", string link3 = "")
     {
-        return ConsultasEvento.ResponderEvento(id, idUsuarioRespondente, resposta, link1, link2, link3);
+        return ConsultasEvento.ResponderEvento(id, idUsuarioRespondente, titulo, resposta, link1, link2, link3);
     }
     public static bool ExcluirEvento(int id)
     {

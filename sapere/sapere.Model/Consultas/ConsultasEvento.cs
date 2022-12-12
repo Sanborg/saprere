@@ -89,7 +89,7 @@ public class ConsultasEvento
         }
         return evento;
     }
-    public static bool ResponderEvento(int id, int idUsuarioRespondente, string resposta, string link1 = "", string link2 = "", string link3 = "")
+    public static bool ResponderEvento(int id, int idUsuarioRespondente, string titulo, string resposta, string link1 = "", string link2 = "", string link3 = "")
     {
         var conexao = new MySqlConnection(ConexaoBD.Connection.ConnectionString);
         bool foiRespondido = false;
@@ -99,20 +99,17 @@ public class ConsultasEvento
             conexao.Open();
             var comando = conexao.CreateCommand();
             comando.CommandText = @"
-                  UPDATE Evento SET idUsuarioRespondente = @idUsuarioRespondente, resposta = @resposta, link1 = @link1, link2 = @link2, link3 = @link3
+                  UPDATE Evento SET idUsuarioRespondente = @idUsuarioRespondente, titulo = @titulo, resposta = @resposta, link1 = @link1, link2 = @link2, link3 = @link3
                   WHERE id = @id";
             comando.Parameters.AddWithValue("@id", id);
             comando.Parameters.AddWithValue("@idUsuarioRespondente", idUsuarioRespondente);
+            comando.Parameters.AddWithValue("@titulo", titulo);
             comando.Parameters.AddWithValue("@resposta", resposta);
             comando.Parameters.AddWithValue("@link1", link1);
             comando.Parameters.AddWithValue("@link2", link2);
             comando.Parameters.AddWithValue("@link3", link3);
             var leitura = comando.ExecuteReader();
             foiRespondido = true;
-
-
-
-
         }
         catch (Exception ex)
         {

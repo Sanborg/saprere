@@ -22,11 +22,9 @@ namespace sapere.View
         public Usuario usuario { get; }
         public Evento evento { get; }
         public bool respondeuEvento { get; }
-
         public frmMenu()
         {
             InitializeComponent();
-
         }
         public frmMenu(Usuario usuario, Evento evento, bool respondeuEvento)
         {
@@ -67,14 +65,12 @@ namespace sapere.View
             frmPesquisaDeEvento.Show();
             Close();
         }
-
         private void PressionarBtnPerfil(object sender, MouseButtonEventArgs e)
         {
-            frmPerfil frmPerfil = new frmPerfil(usuario);
+            frmPerfil frmPerfil = new frmPerfil(usuario, evento, respondeuEvento);
             frmPerfil.Show();
             Close();
         }
-
         private void PressionarBtnConfiguracoes(object sender, MouseButtonEventArgs e)
         {
             frmConfiguracoes frmConfiguracoes = new frmConfiguracoes(usuario);
@@ -85,17 +81,15 @@ namespace sapere.View
         {
             txtCumprimento.Text = $"Olá, {usuario.nome}!";
         }
-
         private void PressionarEventoNaoRespondido(object sender, MouseButtonEventArgs e)
         {
             frmVisualizacaoEventoNaoRespondido frmVisualizacaoEventoNaoRespondido = new frmVisualizacaoEventoNaoRespondido(usuario, evento);
             frmVisualizacaoEventoNaoRespondido.Show();
             Close();
         }
-
         private void PressionarEventoRespondido(object sender, MouseButtonEventArgs e)
         {
-            frmVisualizacaoEventoRespondidoParte1 frmVisualizacaoEventoRespondidoParte1 = new frmVisualizacaoEventoRespondidoParte1(usuario, evento);
+            frmVisualizacaoEventoRespondidoParte1 frmVisualizacaoEventoRespondidoParte1 = new frmVisualizacaoEventoRespondidoParte1(usuario, evento, respondeuEvento);
             frmVisualizacaoEventoRespondidoParte1.Show();
             Close();
         }

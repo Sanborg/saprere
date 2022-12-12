@@ -21,14 +21,16 @@ namespace sapere.View
     public partial class frmEsqueceuSenha : Window
     {
         public Evento evento { get; }
+        public bool respondeuEvento { get; }
         public frmEsqueceuSenha()
         {
             InitializeComponent();
         }
-        public frmEsqueceuSenha(Evento evento)
+        public frmEsqueceuSenha(Evento evento, bool respondeuEvento)
         {
             InitializeComponent();
             this.evento = evento;
+            this.respondeuEvento = respondeuEvento;
         }
         public void EnviarEmailRecuperacao(string email)
         {
@@ -61,7 +63,7 @@ namespace sapere.View
                         mail.Body = $"O seu código de recuperação de conta é {codigo}. Insira-o no campo apropriado do aplicativo.";
                         SmtpClient smpt = new SmtpClient("saperepjt@gmail.com");
                         smpt.Send(mail);
-                        frmInsercaoCodigo frmInsercaoCodigo = new frmInsercaoCodigo(evento, email, codigo);
+                        frmInsercaoCodigo frmInsercaoCodigo = new frmInsercaoCodigo(evento, respondeuEvento, email, codigo);
                         frmInsercaoCodigo.Show();
                         Close();
                     }
@@ -90,10 +92,9 @@ namespace sapere.View
         {
             EnviarEmailRecuperacao(boxEmail.Text);
         }
-
         private void PressionarBtnVoltar(object sender, MouseButtonEventArgs e)
         {
-            frmLogin frmLogin = new frmLogin();
+            frmLogin frmLogin = new frmLogin(evento, respondeuEvento);
             frmLogin.Show();
             Close();
         }
